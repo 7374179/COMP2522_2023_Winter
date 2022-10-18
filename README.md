@@ -16,7 +16,9 @@ You are allowed any number of written materials or physical items that are not i
 ## Plagiarism and Rules for Accessing Information
 You are allowed to access a limited number of websites:
 - Anything from [GitHub.com](http://github.com) is allowed to be READ only.
-- Anything from [Docs.Oracle.com](https://docs.oracle.com/) is allowed to READ only.
+- Anything from [Docs.Oracle.com](https://docs.oracle.com/) is allowed to be READ only.
+- Anything from [DevDocs.io](https://devdocs.io/) is allowed to be READ only.
+- Anything from [W3Schools.com](http://w3schools.com) is allowed to be READ only.
 
 No other web access is allowed, i.e.,
 - NO communication platforms of any kind
