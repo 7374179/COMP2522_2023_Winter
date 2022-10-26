@@ -42,6 +42,46 @@ For B.01.2: You likely need to work on constructors. Practice creating classes t
 
 For B.02.3: You likely need to work on mutating global state. Practice creating classes with methods that update global state.
 
+### Example correct implementation
+```java
+public class Basic_01 {
+  private int x;
+  private int y;
+  private int size;
+  
+  public Basic_01(int x, int y, int size) {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+  }
+
+  public void move(int dx, int dy) {
+      this.x = this.x + dx;
+      this.y = this.y + dy;
+  }
+```
+
+### Example incorrect implementations
+```java
+  public void move(int dx, int dy) {
+    dx += x;
+    dy = this.Ypos;
+  }
+```
+
+```java
+public class Basic_01 {
+    int x = 0;
+    int y = 0;
+    int size = 0;
+    
+  public Basic_01(int x, int y, int size) {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+  }
+```
+
 ## Basic_02
 ### Criteria
 B.02.1 Constructor and private members correctly implemented in part class (1)
@@ -63,6 +103,61 @@ For B.02.2: You likely need to learn how to write getters and setters. Look at g
 For B.02.3: You likely need to work on creating methods that have specified inputs and outputs. Practice method design by writing methods by hand on paper.
 
 For B.03.4: You likely need to work on stepping through code that calls other code. Practice by using your debugger, taking note of how the values change by writing them on paper step by step.
+
+### Example correct implementations
+```java
+public class Basic_02_vector {
+  private int x;
+  private int y;
+  
+  public Basic_02_vector(int x, int y){
+    this.x = x;
+    this.y = y;
+  }
+  
+  public int getX() {
+    return x;
+  }
+
+  public void setX(int x) {
+    this.x = x;
+  }
+
+  public int getY() {
+    return y;
+  }
+
+  public void setY(int y) {
+    this.y = y;
+  }
+  
+  public Basic_02_vector add(Basic_02_vector other){
+    this.x += other.getX();
+    this.y += other.getY();
+    return this;
+  }
+}
+```
+
+### Example incorrect implementations
+```java
+public int add(int d) {
+    int r;
+    r = this.x + this.y + d;
+    return r;
+}
+```
+```java
+public Basic_02_vector add(Basic_02_vector direction) {
+    this.direction += this.direction + direction;
+}
+```
+```java
+	public Basic_02_vector add(Basic_02_vector direction) {
+		this.position.x == this.position.x + this.direction.x;
+		this.position.y == this.position.y + this.direction.y;
+	}
+```
 
 ## Basic_03
 ### Criteria
