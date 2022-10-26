@@ -669,6 +669,30 @@ class hashMapIterator implements Iterator<String> {
 
 (2) set up a test case for yourself similar to the midterm question and ensure that you're not able to create multiple instances.
 
+### Example correct implementation
+```java
+public class Singleton {
+  private static Singleton singleton;
+  private String label;
+
+  private Singleton() {}
+
+  public static Singleton getInstance() {
+    if (singleton == null) {
+      singleton = new Singleton();
+    }
+    return singleton;
+  }
+
+  public void setLabel(String label) {
+    this.label = label;
+  }
+
+  public String getLabel() {
+    return this.label;
+  }
+}
+```
 
 ## Advanced_03
 ### Criteria
