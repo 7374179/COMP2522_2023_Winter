@@ -625,6 +625,27 @@ For all criteria: most mistakes that I saw were what I would call "coding withou
 
 E.g., for those of you who used the builtin HashMap iterator, the order of returns may not be what you want. Is it alphabetical? Is it random? A custom iterator will allow you to control this.
 
+### Example correct implementation
+```java
+class hashMapIterator implements Iterator<String> {
+  HashMap<String, String> store;
+  int i = 0;
+
+  public hashMapIterator(HashMap<String, String> store) {
+    this.store = store;
+  }
+
+  public boolean hasNext() {
+    return i < store.size();
+  }
+
+  public String next() {
+    String ret = store.get(i);
+    i++;
+    return ret;
+  }
+}
+```
 
 ## Advanced_02
 ### Criteria
