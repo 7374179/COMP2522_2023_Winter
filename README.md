@@ -845,3 +845,37 @@ public class MotorDriver {
 
 ### Notes
 I took marks off if there was no clear connection between the classes or if the methods were very incorrect. Some people put in more methods than I expected; as long as they were reasonable, I gave full marks.
+
+```java
+public class Controller {
+  private Engine engine;
+  private Brakes brakes;
+  public Controller() {}
+  public void run() {
+    engine.accelerate();
+    engine.decelerate();
+    brakes.decelerate();
+  }
+  public void setCurrentGasOutput() {}
+  public void setCurrentSpeed() {}
+}
+
+public class Engine {
+  private Controller controller;
+  public Engine() {}
+  public void accelerate() {
+    controller.setCurrentGasOutput();
+  }
+  public void decelerate() {
+    controller.setCurrentGasOutput();
+  }
+}
+
+public class Brakes {
+  private Controller controller;
+  public Brakes() {}
+  public void decelerate() {
+    controller.setCurrentSpeed();
+  }
+}
+```
