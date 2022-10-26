@@ -627,7 +627,26 @@ E.g., for those of you who used the builtin HashMap iterator, the order of retur
 
 ### Example correct implementation
 ```java
+class hashMapIterator implements Iterator<String> {
+  HashMap<String, String> store;
+  ArrayList<String> keys;
+  int i = 0;
 
+  public hashMapIterator(HashMap<String, String> store) {
+    this.store = store;
+    this.keys = store.keySet();
+  }
+
+  public boolean hasNext() {
+    return i < store.size();
+  }
+
+  public String next() {
+    String ret = store.get(keys.get(i));
+    i++;
+    return ret;
+  }
+}
 ```
 
 ## Advanced_02
