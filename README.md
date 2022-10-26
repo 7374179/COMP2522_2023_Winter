@@ -503,7 +503,8 @@ class Intermediate_01_Test extends Intermediate_01 {
 
 ## Intermediate_04
 ### Criteria
--
+- Each class was correctly implemented.
+
 ### Common mistakes
 - Technically, constructors should call super, but since I didn't ask for constructors, I didn't mark this down
 - Also technically, you don't need to reimplement methods from a superclass that you aren't overriding, but I decided not to take marks off for this
@@ -512,11 +513,13 @@ class Intermediate_01_Test extends Intermediate_01 {
 - Creating the abstract class without any abstract methods
 - Small errors were ignored for this question
 
+## Notes
+See above mistakes.
+
 
 ## Intermediate_05
 ### Criteria
 - I.05.1 Since this was relative to your own work and therefore highly variable between submissions, all reasonable attempts given full marks.
-
 
 ## Intermediate_06
 ### Criteria
