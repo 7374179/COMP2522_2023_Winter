@@ -811,6 +811,31 @@ public class Observer {
 ### Notes
 There were enough issues with directionality that I think it reflects on the quality of my explanation more than the knowledge of the people who attempted it. As such, I gave full marks to anyone who got all of the methods and classes correct, even if they put the methods in different classes.
 
+### Example correct implementation
+```java
+public class RC_Remote {}
+
+public class RadioReceiver {
+  public int sendSignal() {}
+  public int poll() {}
+}
+
+public class Controller {
+  public void setSpeed(int speed) {}
+  public void receiveCommand() {}
+}
+
+public class MotorController {
+  public void setDirection(int direction) {}
+  public void setSpeed(int speed) {}
+  public void setAngle(int angle) {}
+}
+
+public class MotorDriver {
+  public void setPower(int power) {}
+}
+```
+
 ## Advanced_06
 ### Criteria
 - A.06.1 Reasonable implementation of diagram.
