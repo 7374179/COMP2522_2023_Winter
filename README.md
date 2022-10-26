@@ -475,6 +475,39 @@ class Intermediate_01_Test extends Intermediate_01 {
 - For I.02.3: Almost no mistakes here.
 - For I.02.4: Use the IDE to give you hints about what needs to be fixed.
 
+### Example correct implementation
+```java
+public interface Drivable {
+  void drive();
+}
+
+public interface Drivable {
+  void drive();
+}
+
+public interface Loadable {
+  void load();
+}
+
+public class Bike implements Drivable, Liftable {
+  public Bike() {}
+  public void drive() {}
+  public void lift() {}
+}
+
+public class Car implements Drivable, Loadable {
+  public Car() {};
+  public void drive() {};
+  public void load() {};
+}
+
+public class Truck implements Drivable, Loadable {
+  public Truck() {};
+  public void drive() {};
+  public void load() {};
+}
+```
+
 
 ## Intermediate_03
 ### Criteria
