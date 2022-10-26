@@ -153,10 +153,10 @@ public Basic_02_vector add(Basic_02_vector direction) {
 }
 ```
 ```java
-	public Basic_02_vector add(Basic_02_vector direction) {
-		this.position.x == this.position.x + this.direction.x;
-		this.position.y == this.position.y + this.direction.y;
-	}
+public Basic_02_vector add(Basic_02_vector direction) {
+	this.position.x == this.position.x + this.direction.x;
+	this.position.y == this.position.y + this.direction.y;
+}
 ```
 
 ## Basic_03
@@ -179,6 +179,33 @@ For B.03.1: You are likely unclear on how to make super and subclasses and what 
 For B.03.2: You are likely unclear on class attributes and how they work. Practice by declaring subclasses and using your IDE's popup suggestion boxes to see candidate variables. Then, trace the code using your debugger.
 
 For B.03.3: You likely do not understand how super works (or missed that instruction). Practice is the same as B.03.1 but for methods rather than constructors.
+
+### Example correct implementations
+```java
+public class Basic_03_Sub extends Basic_03 {
+  public float z;
+  
+  @Override
+  public void add(Basic_03 vec){
+    if (vec instanceof Basic_03_Sub){
+      this.z += ((Basic_03_Sub) vec).z;
+    }
+    super.add(vec);
+  }
+}
+```
+
+### Example incorrect implementations
+```java
+public void add(Basic_03 vec) {
+    super.add(z);
+}
+```
+```java
+public void add(Basic_03 vec) {
+    this.z += vec.z;
+}
+```
 
 ## Basic_04
 ### Criteria
@@ -204,6 +231,72 @@ For B.04.3: Same as B.04.2.
 
 For B.04.4: You may not understand how arrays, loops, or printing works. Practice by drawing your arrays by hand and stepping through with the debugger.
 
+### Example correct implementations
+```java
+public interface Basic_04_ITimeable {
+
+  void start();
+  void lap();
+  void print();
+
+}
+
+
+public class Basic_04 implements Basic_04_ITimeable{
+  private Date start;
+  private Date now;
+  private ArrayList<Date> laps;
+
+  public Basic_04() {
+    this.start = new Date();
+    this.now = new Date();
+    this.laps = new ArrayList<Date>();
+  }
+  
+  public void start() {
+    this.start = new Date();
+    laps.clear();
+  }
+
+  public void lap() {
+    Date now = new Date();
+    laps.add(now);
+    this.now = now;
+  }
+
+  public void print() {
+    lap();
+    for (Date lap : laps) {
+      System.out.println(lap);
+    }
+  }
+}
+```
+
+### Example incorrect implementations
+```java
+public class Basic_04 implements Basic_04_ITimeable {
+  private Date start;
+  private Date now;
+  private ArrayList<Date> laps;
+
+  public Basic_04_Answer() {
+    this.start = new Date();
+    this.now = new Date();
+    this.laps = new ArrayList<Date>();
+  }
+  
+  public void start(){
+    this.start = now;
+    this.laps.clear();
+  }
+  
+  public void lap() {
+    this.laps.add(now);
+  }
+}
+
+```
 
 ## Basic_05
 ### Criteria
@@ -218,12 +311,29 @@ B.05.4 Try/catch block 2
 - Exception never thrown
 - Throwing exceptions while handling exceptions
 
-### Notess
+### Notes
 For B.05.1: Practice making exception classes.
 For B.05.2: Practice writing good error messages by using the passed variables in your exception as part of the error string.
 For B.05.3: Wrap methods that throw exceptions in try/catch blocks. Practice by using exceptions and following the IDE warnings.
 For B.05.4: Same as B.05.3.
 
+### Example correct implementation
+```java
+public class Basic_05_exception extends Exception {
+	public Basic_05_exception(int a, int b) {
+		super(String.format("A: %d B: %d. Negative values not allowed.", a, b));
+	}
+}
+
+public int addPositive(int a, int b) throws Basic_05_exception {
+	if (a < 0 || b < 0) {
+		throw new Basic_05_exception(a, b);
+	} else {
+		return a + b;
+	}
+}
+  
+```
 
 ## Basic_06
 ### Criteria
@@ -239,6 +349,17 @@ For B.06.1: You may not understand how to create or use JUnit tests. Pratice by 
 For B.06.2: Same as B.06.1.
 For B.06.3: Same as any above method writing suggestions.
 
+### Example correct implementation
+```java
+Basic_06_myClass b = new Basic_06_myClass();
+
+@Test
+void moveTest(){
+	b.move(1, 1);
+	assertEquals(1, b.x);
+	assertEquals(1, b.y);
+}
+```
 
 ## Basic_07
 ### Criteria
@@ -289,6 +410,54 @@ For I.01.1: Tests need to cover all boundaries/edge cases/conditions. Easiest me
 
 For I.01.2: Best practice involves declaring and intializing variables in @Before setup method, but OK to change state per test. Goal is readability. Practice by using the automatic test creation offerred by the IDE as a template, then expanding to all edge cases.
 
+### Example correct implementation
+```java
+class Intermediate_01_Test extends Intermediate_01 {
+
+  Intermediate_01 i01;
+
+  @BeforeEach
+  void setUp() {
+    i01 = new Intermediate_01();
+    i01.setX(40);
+    i01.setY(40);
+  }
+
+  @Test
+  void moveLeft() {
+    i01.move("LEFT", 5);
+    assertEquals(35, i01.getX());
+  }
+
+  @Test
+  void moveUp() {
+    i01.move("UP", 5);
+    assertEquals(45, i01.getY());
+  }
+
+  @Test
+  void moveRight() {
+    i01.move("RIGHT", 5);
+    assertEquals(45, i01.getX());
+  }
+
+  @Test
+  void moveDown() {
+    i01.move("DOWN", 5);
+    assertEquals(35, i01.getY());
+  }
+
+  @Test
+  void outOfBounds() {
+    i01.move("LEFT",40);
+    assertEquals(0, i01.getX());
+
+    i01.move("DOWN", 50);
+    assertEquals(0, i01.getY());
+  }
+}
+```
+
 ## Intermediate_02
 ### Criteria
 I.02.1: Classes created with appropriate methods
@@ -300,7 +469,7 @@ I.02.4: Compiles correctly
 - Using abstract classes instead of interfaces
 - Not implementing interface methods
 
-### Notess
+### Notes
 For I.02.1: Look into the definition of interfaces vs. abstract methods. 
 For I.02.2: Look into labs on polymorphism.
 For I.02.3: Almost no mistakes here.
@@ -325,7 +494,7 @@ I.03.5 Reasonable overall structure, readable, illustrates the concept clearly
 - No member attributes to indicate composition or aggregation
 - No arrays or other collections used for aggregation
 
-### Notess
+### Notes
 For I.03.1: You likely need practice with modeling similarities between classes of objects. Focus particulaly on reducing code duplication. 
 For I.03.2: You likely need practice with the parts-whole relationship of composition. Focus particularly on creating classes that use other classes without extension. Practice by decomposing objects in the world into parts-whole relationships and modeling them with code.
 For I.03.3: You likely need practice with using inheritance to reduce code duplication. Or, you may need to use inheritance to indicate type-of relationships. Practice is similar to I.03.1.
