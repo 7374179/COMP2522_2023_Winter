@@ -532,6 +532,7 @@ public class Truck implements Drivable, Loadable {
 - For I.03.4: Most mistakes that I saw either just didn't use aggregation or used composition instead of aggregation, which is a pretty reasonable mistake with a simple fix: use collections such as ArrayLists, etc.
 - For I.03.5: You likely need practice with communicating via code, i.e., naming variables reasonably, using comments, structuring your code. Practice involves editing your code, i.e., reading it from the perspective of another person reading it.
 
+### Example correct implementation
 ```java
 public abstract class Automobile {
   protected Engine engine;
@@ -546,7 +547,6 @@ public class Truck extends Automobile {}
 
 public class Wheel {}
 ```
-
 
 ## Intermediate_04
 ### Criteria
@@ -563,6 +563,31 @@ public class Wheel {}
 ## Notes
 See above mistakes.
 
+### Example correct implementation
+```java
+public abstract class Book {
+  private int length;
+  private int position;
+  private ArrayList<Page> pages;
+  public abstract Page getPage();
+}
+
+public class Page {
+  private ArrayList<Paragraph> content;
+  public Paragraph getParagraph(int p) {
+    return content.get(p);
+  }
+}
+
+public class Paragraph {
+  private ArrayList<String> sentences;
+  public String getSentence(int s) {
+    return sentences.get(s);
+  }
+}
+
+public class Textbook extends Book {}
+```
 
 ## Intermediate_05
 ### Criteria
