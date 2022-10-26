@@ -508,7 +508,6 @@ public class Truck implements Drivable, Loadable {
 }
 ```
 
-
 ## Intermediate_03
 ### Criteria
 - I.03.1 Abstract class is declared with reasonable attributes and methods
@@ -516,7 +515,6 @@ public class Truck implements Drivable, Loadable {
 - I.03.3 Inheritance is used where multiple classes inherit from other classes
 - I.03.4 Aggregation is used where a whole class includes multiples of the same part in an array
 - I.03.5 Reasonable overall structure, readable, illustrates the concept clearly
-
 
 ### Common mistakes
 - Declaring empty abstract classes.
@@ -533,6 +531,22 @@ public class Truck implements Drivable, Loadable {
 - For I.03.3: You likely need practice with using inheritance to reduce code duplication. Or, you may need to use inheritance to indicate type-of relationships. Practice is similar to - I.03.1.
 - For I.03.4: Most mistakes that I saw either just didn't use aggregation or used composition instead of aggregation, which is a pretty reasonable mistake with a simple fix: use collections such as ArrayLists, etc.
 - For I.03.5: You likely need practice with communicating via code, i.e., naming variables reasonably, using comments, structuring your code. Practice involves editing your code, i.e., reading it from the perspective of another person reading it.
+
+```java
+public abstract class Automobile {
+  protected Engine engine;
+  protected ArrayList<Wheel> wheels;
+}
+
+public class Car extends Automobile {}
+
+public class Engine {}
+
+public class Truck extends Automobile {}
+
+public class Wheel {}
+```
+
 
 ## Intermediate_04
 ### Criteria
