@@ -760,6 +760,45 @@ public int compareTo(Object o) throws NullPointerException, ClassCastException {
 ### Notes
 For all: most of the lost marks on this one was simply missing code. I don't think there's much of a conceptual difficulty exposed by this midterm question.
 
+### Example correct implementation
+```java
+public class Observable {
+  ArrayList<Observer> observers;
+  
+  public Observable(){
+    this.observers = new ArrayList<>();
+  }
+
+  public void registerObserver(Observer observer) {
+    this.observers.add(observer);
+  }
+
+  public void unregisterObserver(Observer observer) {
+    this.observers.remove(observer);
+  }
+
+  public void notifyObservers(String msg) {
+    for (Observer observer : observers){
+      observer.update(msg);
+    }
+  }
+}
+
+public class Observer {
+  private String message;
+  private int id;
+
+  public Observer(int id) {
+    this.id = id;
+  }
+
+  public String update(String message) {
+    this.message = message;
+    return String.format("%d: %s", id, message);
+  }
+}
+```
+
 ## Advanced_05
 ### Criteria
 - A.05.1 Classes correctly declared
