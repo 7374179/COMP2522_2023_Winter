@@ -723,6 +723,27 @@ Which of these are ordered and which are not? Can we impose an order on some, or
 
 Concretely from the lab, we did comparison on strength of Player vs. Enemy. That was a single number. But what if you had to compare multiple numbers, e.g., strength, dexterity, skill, etc. You would have to develop your own metric. Practice by forcing yourself to make these metrics in your project.
 
+### Example correct implementation
+```java
+public int compareTo(Object o) throws NullPointerException, ClassCastException {
+    if (o == null) {
+      throw new NullPointerException();
+    }
+
+    if (!(this instanceof o)) {
+      throw new ClassCastException();
+    }
+
+    if (this.size > ((myClass) o).size) {
+      return 1;
+    } else if (this.size < ((myClass) o).size) {
+      return -1;
+    } else {
+      return 0;
+    }
+}
+```
+
 ## Advanced_04
 ### Criteria
 - A.04.1 Reg/UnRg
