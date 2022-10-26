@@ -36,11 +36,11 @@ GROUND YOURSELF. Learning only works if you know why you're doing something. Nob
 
 ### Notes
 Use the marking criteria to target your misunderstanding. 
-For - B.01.1: You likely need to work creating classes with globally scoped variables. Practice simply creating classes that are stateful.
+- For B.01.1: You likely need to work creating classes with globally scoped variables. Practice simply creating classes that are stateful.
 
-For - B.01.2: You likely need to work on constructors. Practice creating classes that take variables.
+- For B.01.2: You likely need to work on constructors. Practice creating classes that take variables.
 
-For - B.02.3: You likely need to work on mutating global state. Practice creating classes with methods that update global state.
+- For B.02.3: You likely need to work on mutating global state. Practice creating classes with methods that update global state.
 
 ### Example correct implementation
 ```java
@@ -96,13 +96,13 @@ public class Basic_01 {
 - missing constructor in main class
 
 ### Notes
-For - B.02.1: You likely need to work on creating new classes which are referenced by other classes. Practice by creating classes that are referenced by other classes.
+- For B.02.1: You likely need to work on creating new classes which are referenced by other classes. Practice by creating classes that are referenced by other classes.
 
-For - B.02.2: You likely need to learn how to write getters and setters. Look at getters and setters in labs and retype them. Also, use your IDE to autocomplete getters and setters for new classes.
+- For B.02.2: You likely need to learn how to write getters and setters. Look at getters and setters in labs and retype them. Also, use your IDE to autocomplete getters and setters for new classes.
 
-For - B.02.3: You likely need to work on creating methods that have specified inputs and outputs. Practice method design by writing methods by hand on paper.
+- For B.02.3: You likely need to work on creating methods that have specified inputs and outputs. Practice method design by writing methods by hand on paper.
 
-For - B.03.4: You likely need to work on stepping through code that calls other code. Practice by using your debugger, taking note of how the values change by writing them on paper step by step.
+- For B.03.4: You likely need to work on stepping through code that calls other code. Practice by using your debugger, taking note of how the values change by writing them on paper step by step.
 
 ### Example correct implementations
 ```java
@@ -174,11 +174,11 @@ public Basic_02_vector add(Basic_02_vector direction) {
 - Not addressing class variables
 
 ### Notes
-For - B.03.1: You are likely unclear on how to make super and subclasses and what the relationship between them are. You may also be unsure of what super() does. Practice making super and subclasses where the subclasses rely on the superclasses attributes/members and methods. Use the debugger to step through calls to the subclass which also call super.
+- For B.03.1: You are likely unclear on how to make super and subclasses and what the relationship between them are. You may also be unsure of what super() does. Practice making super and subclasses where the subclasses rely on the superclasses attributes/members and methods. Use the debugger to step through calls to the subclass which also call super.
 
-For - B.03.2: You are likely unclear on class attributes and how they work. Practice by declaring subclasses and using your IDE's popup suggestion boxes to see candidate variables. Then, trace the code using your debugger.
+- For B.03.2: You are likely unclear on class attributes and how they work. Practice by declaring subclasses and using your IDE's popup suggestion boxes to see candidate variables. Then, trace the code using your debugger.
 
-For - B.03.3: You likely do not understand how super works (or missed that instruction). Practice is the same as - B.03.1 but for methods rather than constructors.
+- For B.03.3: You likely do not understand how super works (or missed that instruction). Practice is the same as - B.03.1 but for methods rather than constructors.
 
 ### Example correct implementations
 ```java
@@ -223,13 +223,13 @@ public void add(Basic_03 vec) {
 - Adding return values to interface 
 
 ### Notes
-For - B.04.1: You may not understand the definition of interfaces. Practice by declaring interfaces and working through the IDE bugs one-by-one.
+- For B.04.1: You may not understand the definition of interfaces. Practice by declaring interfaces and working through the IDE bugs one-by-one.
 
-For - B.04.2: You may not understand the Date class, how initializing variables works, or the lifecycle of Java variables. Practice by using your debugger to step through the variable values. Write them down on a piece of paper step-by-step.
+- For B.04.2: You may not understand the Date class, how initializing variables works, or the lifecycle of Java variables. Practice by using your debugger to step through the variable values. Write them down on a piece of paper step-by-step.
 
-For - B.04.3: Same as - B.04.2.
+- For B.04.3: Same as - B.04.2.
 
-For - B.04.4: You may not understand how arrays, loops, or printing works. Practice by drawing your arrays by hand and stepping through with the debugger.
+- For B.04.4: You may not understand how arrays, loops, or printing works. Practice by drawing your arrays by hand and stepping through with the debugger.
 
 ### Example correct implementations
 ```java
@@ -312,10 +312,10 @@ public class Basic_04 implements Basic_04_ITimeable {
 - Throwing exceptions while handling exceptions
 
 ### Notes
-For - B.05.1: Practice making exception classes.
-For - B.05.2: Practice writing good error messages by using the passed variables in your exception as part of the error string.
-For - B.05.3: Wrap methods that throw exceptions in try/catch blocks. Practice by using exceptions and following the IDE warnings.
-For - B.05.4: Same as - B.05.3.
+- For B.05.1: Practice making exception classes.
+- For B.05.2: Practice writing good error messages by using the passed variables in your exception as part of the error string.
+- For B.05.3: Wrap methods that throw exceptions in try/catch blocks. Practice by using exceptions and following the IDE warnings.
+- For B.05.4: Same as - B.05.3.
 
 ### Example correct implementation
 ```java
@@ -345,9 +345,9 @@ public int addPositive(int a, int b) throws Basic_05_exception {
 - Few mistakes were common except not finishing
 
 ### Notes
-For - B.06.1: You may not understand how to create or use JUnit tests. Pratice by using the IDE's context actions to automatically generate tests. Review the test lab and practice creating tests.
-For - B.06.2: Same as - B.06.1.
-For - B.06.3: Same as any above method writing suggestions.
+- For B.06.1: You may not understand how to create or use JUnit tests. Pratice by using the IDE's context actions to automatically generate tests. Review the test lab and practice creating tests.
+- For B.06.2: Same as - B.06.1.
+- For B.06.3: Same as any above method writing suggestions.
 
 ### Example correct implementation
 ```java
@@ -369,7 +369,7 @@ void moveTest(){
 - Incorrect order.
 
 ### Notes
-For - B.07.1: Trace code using the stepper or through clicking. Use communication or sequence diagrams to help.
+- For B.07.1: Trace code using the stepper or through clicking. Use communication or sequence diagrams to help.
 
 ## Basic_08
 ### Criteria
@@ -406,9 +406,9 @@ For both: I would suggest looking at examples of code -> single UML classes onli
 - Not using JUnit/using system.out.println
 
 ### Notes
-For - I.01.1: Tests need to cover all boundaries/edge cases/conditions. Easiest method is to make sure there's at least one test per condition, and a test for each side of a value boundary. Best practice is to write out a table of expected inputs and outputs.
+- For I.01.1: Tests need to cover all boundaries/edge cases/conditions. Easiest method is to make sure there's at least one test per condition, and a test for each side of a value boundary. Best practice is to write out a table of expected inputs and outputs.
 
-For - I.01.2: Best practice involves declaring and intializing variables in @Before setup method, but OK to change state per test. Goal is readability. Practice by using the automatic test creation offerred by the IDE as a template, then expanding to all edge cases.
+- For I.01.2: Best practice involves declaring and intializing variables in @Before setup method, but OK to change state per test. Goal is readability. Practice by using the automatic test creation offerred by the IDE as a template, then expanding to all edge cases.
 
 ### Example correct implementation
 ```java
@@ -470,10 +470,10 @@ class Intermediate_01_Test extends Intermediate_01 {
 - Not implementing interface methods
 
 ### Notes
-For - I.02.1: Look into the definition of interfaces vs. abstract methods. 
-For - I.02.2: Look into labs on polymorphism.
-For - I.02.3: Almost no mistakes here.
-For - I.02.4: Use the IDE to give you hints about what needs to be fixed.
+- For I.02.1: Look into the definition of interfaces vs. abstract methods. 
+- For I.02.2: Look into labs on polymorphism.
+- For I.02.3: Almost no mistakes here.
+- For I.02.4: Use the IDE to give you hints about what needs to be fixed.
 
 
 ## Intermediate_03
@@ -495,11 +495,11 @@ For - I.02.4: Use the IDE to give you hints about what needs to be fixed.
 - No arrays or other collections used for aggregation
 
 ### Notes
-For - I.03.1: You likely need practice with modeling similarities between classes of objects. Focus particulaly on reducing code duplication. 
-For - I.03.2: You likely need practice with the parts-whole relationship of composition. Focus particularly on creating classes that use other classes without extension. Practice by decomposing objects in the world into parts-whole relationships and modeling them with code.
-For - I.03.3: You likely need practice with using inheritance to reduce code duplication. Or, you may need to use inheritance to indicate type-of relationships. Practice is similar to - I.03.1.
-For - I.03.4: Most mistakes that I saw either just didn't use aggregation or used composition instead of aggregation, which is a pretty reasonable mistake with a simple fix: use collections such as ArrayLists, etc.
-For - I.03.5: You likely need practice with communicating via code, i.e., naming variables reasonably, using comments, structuring your code. Practice involves editing your code, i.e., reading it from the perspective of another person reading it.
+- For I.03.1: You likely need practice with modeling similarities between classes of objects. Focus particulaly on reducing code duplication. 
+- For I.03.2: You likely need practice with the parts-whole relationship of composition. Focus particularly on creating classes that use other classes without extension. Practice by decomposing objects in the world into parts-whole relationships and modeling them with code.
+- For I.03.3: You likely need practice with using inheritance to reduce code duplication. Or, you may need to use inheritance to indicate type-of relationships. Practice is similar to - I.03.1.
+- For I.03.4: Most mistakes that I saw either just didn't use aggregation or used composition instead of aggregation, which is a pretty reasonable mistake with a simple fix: use collections such as ArrayLists, etc.
+- For I.03.5: You likely need practice with communicating via code, i.e., naming variables reasonably, using comments, structuring your code. Practice involves editing your code, i.e., reading it from the perspective of another person reading it.
 
 ## Intermediate_04
 ### Criteria
@@ -529,9 +529,9 @@ For - I.03.5: You likely need practice with communicating via code, i.e., naming
 - Sequence diagram does not show every instance of class
 
 ### Notes
-For - I.06.1: The common mistakes seemed to be not about conceptual difficulties, rather, they were about syntax details. Practice should include simply refering to communication diagram specifications (widely available on the internet) and using them in the project to track your own code.
+- For I.06.1: The common mistakes seemed to be not about conceptual difficulties, rather, they were about syntax details. Practice should include simply refering to communication diagram specifications (widely available on the internet) and using them in the project to track your own code.
 
-For - I.07.1: Mostly syntax errors as well. For those who did not attempt either the communication diagram or the sequence diagram, the best practice will be to spend time with your debugger, stepping through each function call. If you have not spent time with the debugger yet, now is the time.
+- For I.07.1: Mostly syntax errors as well. For those who did not attempt either the communication diagram or the sequence diagram, the best practice will be to spend time with your debugger, stepping through each function call. If you have not spent time with the debugger yet, now is the time.
 
 
 ## Advanced_01
@@ -564,8 +564,8 @@ E.g., for those of you who used the builtin HashMap iterator, the order of retur
 - Circular instantiation
 
 ### Notes
-For - A.02.1: Often seems to have simply been missed.
-For - A.02.1 and - A.02.2: most mistakes here seem to have been related. E.g., the singleton was missing an attribute which held the instance --> no conditional logic was included. Or, the singleton had no private constructor --> getInstance was not the only way to construct the singleton rendering it not a singleton. Best practice would be:
+- For A.02.1: Often seems to have simply been missed.
+- For A.02.1 and - A.02.2: most mistakes here seem to have been related. E.g., the singleton was missing an attribute which held the instance --> no conditional logic was included. Or, the singleton had no private constructor --> getInstance was not the only way to construct the singleton rendering it not a singleton. Best practice would be:
 
 (1) type the singleton BY HAND and comment each line to ensure you understand what you are typing. Very clearly many people simply did a bad job of copy-pasting by not knowing the meaning of each line. There's no value in copy-pasting for learning: discipline yourself to retype until you understand it. 
 
@@ -584,9 +584,9 @@ For - A.02.1 and - A.02.2: most mistakes here seem to have been related. E.g., t
 - Invalid comparisons, e.g., between objects without guaranteed type
 
 ### Notes
-For - A.03.1: few people got this one very wrong, so not much to say here.
-For - A.03.2: Many people did not throw the exceptions as specified in the comment. Those who did, I tended to give full marks to.
-For - A.03.3: This is where the majority of the difficulties seemed to be. Casting is "possible" in the sense that this would get away from compiler errors, but it doesn't allow your code to be very extensible and would throw errors as soon as you compared something other than what you casted to. Try to not think about casting as a cure-all to compiler errors. The best solutions here explicitly handled type with an exception (that's why the comment required them). 
+- For A.03.1: few people got this one very wrong, so not much to say here.
+- For A.03.2: Many people did not throw the exceptions as specified in the comment. Those who did, I tended to give full marks to.
+- For A.03.3: This is where the majority of the difficulties seemed to be. Casting is "possible" in the sense that this would get away from compiler errors, but it doesn't allow your code to be very extensible and would throw errors as soon as you compared something other than what you casted to. Try to not think about casting as a cure-all to compiler errors. The best solutions here explicitly handled type with an exception (that's why the comment required them). 
 
 In general, the idea of a "valid comparision" needs to be reinforced with type checking. Best practice for this is to really solidify the idea of type in your mind by practicing comparisons. E.g., if we wanted to compare two objects, what are the qualities by which we could compare them? Which are orderable, which are not? If they DO have a possible order, what do we need?
 
