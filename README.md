@@ -477,8 +477,8 @@ class Intermediate_01_Test extends Intermediate_01 {
 
 ### Example correct implementation
 ```java
-public interface Drivable {
-  void drive();
+public interface Liftable {
+  void lift();
 }
 
 public interface Drivable {
