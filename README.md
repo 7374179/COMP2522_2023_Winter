@@ -1,3 +1,6 @@
+Welcome to the COMP 2522 Final! This exam is different than the midterm exam. For this exam, all questions are required for full marks. They are longer questions with multiple parts to them. The best marks will be for meeting and exceeding the requirements, i.e., code that just "technically works" will not guarantee you full marks. Code with good design, style, and clever solutions will be given top marks. 
+
+If you're stuck on something, clearly state your assumptions in comments and make decisions about what you'd like the code to do. Multiple solutions will be correct for the given requirements, so demonstrate your knowledge to the best of your ability.
 
 ## Materials
 You are required to bring your own computer. Make sure it is CHARGED since there is no guarantee of enough power outlets in the room.
