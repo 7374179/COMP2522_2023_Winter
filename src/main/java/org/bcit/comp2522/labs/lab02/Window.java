@@ -53,6 +53,8 @@ public class Window extends PApplet {
   public void draw() {
     background(0);
     // TODO: add the Mouse collide, move, and draw here
+
+
     // hint: use mouseX and mouseY
     for (Ball ball : balls) {
       ball.collide();

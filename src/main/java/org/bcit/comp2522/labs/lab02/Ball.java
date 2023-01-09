@@ -1,5 +1,8 @@
 package org.bcit.comp2522.labs.lab02;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 import static processing.core.PApplet.atan2;
 import static processing.core.PApplet.cos;
 import static processing.core.PApplet.sin;
@@ -8,7 +11,7 @@ import static processing.core.PApplet.sqrt;
 /**
  * Class for a Ball to be displayed onscreen.
  */
-public class Ball {
+public class Ball extends Mouse {
   private float xpos;
   private float ypos;
   private final float diameter;
@@ -27,11 +30,27 @@ public class Ball {
     this.window = scene;
   }
 
+  public float getVx() {
+    return vx;
+  }
+
+  public void setVx(float vx) {
+    this.vx = vx;
+  }
+
+  public float getVy() {
+    return vy;
+  }
+
+  public void setVy(float vy) {
+    this.vy = vy;
+  }
+
   /**
    * Draws a circle onscreen at x, y, circle.
    *
-   * @param x position of centre of circle
-   * @param y position of centre of circle
+   * @param x        position of centre of circle
+   * @param y        position of centre of circle
    * @param diameter width of circle
    */
   public void drawCircle(float x, float y, float diameter) {
@@ -60,10 +79,14 @@ public class Ball {
         float targetY = ypos + sin(angle) * minDist;
         float ax = (targetX - others[i].xpos) * window.spring;
         float ay = (targetY - others[i].ypos) * window.spring;
-        vx -= ax;
-        vy -= ay;
-        others[i].vx += ax;
-        others[i].vy += ay;
+
+        setVx(vx -= ax);
+        setVy(vy -= ay);
+
+        others[i].setVx(others[i].getVx() + ax);
+        others[i].setVy(others[i].getVy() + ay);
+
+
       }
     }
   }
@@ -90,4 +113,40 @@ public class Ball {
       vy *= window.friction;
     }
   }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (obj instanceof Ball) {
+      if (this.diameter == ((Ball) obj).diameter) {
+        return true;
+      }
+
+      return false;
+    }
+    return false;
+  }
+
+  @Override
+  public int hashCode() {
+    int result = Objects.hash(xpos, ypos, diameter, vx, vy, id, window);
+    result = 31 * result + Arrays.hashCode(others);
+    return result;
+  }
+
+  @Override
+  public String toString() {
+    return "Ball{" +
+            "xpos=" + xpos +
+            ", ypos=" + ypos +
+            ", diameter=" + diameter +
+            ", vx=" + vx +
+            ", vy=" + vy +
+            ", id=" + id +
+            ", others=" + Arrays.toString(others) +
+            ", window=" + window +
+            '}';
+  }
 }
+
+
+
