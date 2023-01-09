@@ -7,7 +7,7 @@ public class Logger {
     Date date = new Date();
     String datestring = date.toString();
     /* TODO: change the next line to add the date to String s */
-    String out = "s";
+    String out = datestring + " : Hello, world!";
     System.out.println(out);
     return out;
   }
