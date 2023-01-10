@@ -12,9 +12,9 @@ import static processing.core.PApplet.sqrt;
  * Class for a Ball to be displayed onscreen.
  */
 public class Ball extends Mouse {
-  private float xpos;
-  private float ypos;
-  private final float diameter;
+  protected float xpos;
+  protected float ypos;
+  protected final float diameter;
   private float vx = 0;
   private float vy = 0;
   private final int id;
@@ -22,6 +22,7 @@ public class Ball extends Mouse {
   private Window window;
 
   Ball(float xin, float yin, float din, int idin, Ball[] oin, Window scene) {
+    super(xin, yin, din, oin, scene);
     this.xpos = xin;
     this.ypos = yin;
     this.diameter = din;
@@ -29,6 +30,8 @@ public class Ball extends Mouse {
     this.others = oin;
     this.window = scene;
   }
+
+
 
   public float getVx() {
     return vx;

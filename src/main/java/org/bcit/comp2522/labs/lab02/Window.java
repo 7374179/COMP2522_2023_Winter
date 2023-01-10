@@ -10,7 +10,6 @@ import processing.core.PApplet;
  * multiple-object collision.
  *
  * @author paul_bucci
- *
  */
 public class Window extends PApplet {
 
@@ -33,12 +32,12 @@ public class Window extends PApplet {
     /* Create a new set of balls with random sizes. */
     for (int i = 0; i < numBalls; i++) {
       balls[i] = new Ball(
-        random(width),
-        random(height),
-        random(30, 70),
-        i,
-        balls,
-        this
+              random(width),
+              random(height),
+              random(30, 70),
+              i,
+              balls,
+              this
       );
     }
     noStroke();
@@ -53,10 +52,10 @@ public class Window extends PApplet {
   public void draw() {
     background(0);
     // TODO: add the Mouse collide, move, and draw here
-//    Mouse m = new Mouse();
-//    m.move();
-//    m.draw();
-//    m.collide();
+    Mouse m = new Mouse(mouseX, mouseY, 20, balls, this);
+    m.move();
+    m.draw();
+    m.collide();
     // hint: use mouseX and mouseY
     for (Ball ball : balls) {
       ball.collide();
