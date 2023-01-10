@@ -6,23 +6,18 @@ import static processing.core.PApplet.sin;
 import static processing.core.PApplet.sqrt;
 
 public class Mouse extends Collidable {
-  private float xpos;
-  private float ypos;
-  private final float diameter;
+  private final float diameter = 30;
   private Window window;
-  private Ball[] balls;
+  private Ball[] others;
 
-  public Mouse(float xin, float yin, float din, Ball[] bin, Window scene) {
-    this.xpos = xin;
-    this.ypos = yin;
-    this.diameter = din;
-    this.balls = bin;
-    this.window = scene;
+  public Mouse(Ball[] others, Window window) {
+    this.others = others;
+    this.window = window;
   }
 
   @Override
   public void draw() {
-    window.ellipse(xpos, ypos, diameter, diameter);
+    window.ellipse(window.mouseX, window.mouseY, diameter, diameter);
   }
 
 //  @Override
@@ -32,20 +27,25 @@ public class Mouse extends Collidable {
 
   @Override
   public void collide() {
-    for (Ball ball : balls) {
-      float dx = ball.xpos - xpos;
-      float dy = ball.ypos - ypos;
+    for (int i = 0; i < others.length; i++) {
+      float dx = others[i].xpos - window.mouseX;
+      float dy = others[i].ypos - window.mouseY;
       float distance = sqrt(dx * dx + dy * dy);
-      float minDist = ball.diameter / 2 + diameter / 2;
+      float minDist = others[i].diameter / 2 + diameter / 2;
       if (distance < minDist) {
         float angle = atan2(dy, dx);
-        float targetX = xpos + cos(angle) * minDist;
-        float targetY = ypos + sin(angle) * minDist;
-        float ax = (targetX - ball.xpos) * window.spring;
-        float ay = (targetY - ball.ypos) * window.spring;
+        float targetX = window.mouseX + cos(angle) * minDist;
+        float targetY = window.mouseY + sin(angle) * minDist;
+        float ax = (targetX - others[i].xpos) * window.spring;
+        float ay = (targetY - others[i].ypos) * window.spring;
+//
+//        setVx(vx -= ax);
+//        setVy(vy -= ay);
 
-        ball.setVx(ball.getVx() - ax);
-        ball.setVy(ball.getVy() - ay);
+        others[i].setVx(others[i].getVx() + ax);
+        others[i].setVy(others[i].getVy() + ay);
+
+
       }
     }
   }

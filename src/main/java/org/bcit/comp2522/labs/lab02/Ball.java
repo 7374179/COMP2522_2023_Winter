@@ -11,7 +11,7 @@ import static processing.core.PApplet.sqrt;
 /**
  * Class for a Ball to be displayed onscreen.
  */
-public class Ball extends Mouse {
+public class Ball extends Collidable {
   protected float xpos;
   protected float ypos;
   protected final float diameter;
@@ -22,7 +22,7 @@ public class Ball extends Mouse {
   private Window window;
 
   Ball(float xin, float yin, float din, int idin, Ball[] oin, Window scene) {
-    super(xin, yin, din, oin, scene);
+//    super(xin, yin, din, oin, scene);
     this.xpos = xin;
     this.ypos = yin;
     this.diameter = din;
