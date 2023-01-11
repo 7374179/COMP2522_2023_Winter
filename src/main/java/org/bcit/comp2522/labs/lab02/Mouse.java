@@ -5,11 +5,23 @@ import static processing.core.PApplet.cos;
 import static processing.core.PApplet.sin;
 import static processing.core.PApplet.sqrt;
 
+/**
+ * mouse class that allows mouse cursor to collide the balls inside window.
+ *
+ * @author Tae Hyung Lee and Taehyuk Chung
+ * @version 17.0.4.1
+ */
 public class Mouse extends Collidable {
   private final float diameter = 30;
   private Window window;
   private Ball[] others;
 
+  /**
+   * constructor for Mouse class.
+   *
+   * @param others as an instance of Ball array.
+   * @param window as an instance of Window class.
+   */
   public Mouse(Ball[] others, Window window) {
     this.others = others;
     this.window = window;
@@ -20,10 +32,6 @@ public class Mouse extends Collidable {
     window.ellipse(window.mouseX, window.mouseY, diameter, diameter);
   }
 
-//  @Override
-//  void move() {
-//
-//  }
 
   @Override
   public void collide() {
@@ -38,9 +46,7 @@ public class Mouse extends Collidable {
         float targetY = window.mouseY + sin(angle) * minDist;
         float ax = (targetX - others[i].xpos) * window.spring;
         float ay = (targetY - others[i].ypos) * window.spring;
-//
-//        setVx(vx -= ax);
-//        setVy(vy -= ay);
+
 
         others[i].setVx(others[i].getVx() + ax);
         others[i].setVy(others[i].getVy() + ay);

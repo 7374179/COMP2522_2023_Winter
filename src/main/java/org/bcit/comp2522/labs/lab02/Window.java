@@ -23,7 +23,8 @@ public class Window extends PApplet {
   float friction = -0.9f;
   /* contains all the balls on screen */
   Ball[] balls = new Ball[numBalls];
-  Mouse[] mouse = new Mouse[1];
+
+
   /**
    * Called once at the beginning of the program.
    * Initializes all objects.
@@ -51,8 +52,8 @@ public class Window extends PApplet {
    */
   public void draw() {
     background(0);
-    // TODO: add the Mouse collide, move, and draw here
-    Mouse m = new Mouse(balls,this);
+
+    Mouse m = new Mouse(balls, this);
 
     m.move();
     m.draw();

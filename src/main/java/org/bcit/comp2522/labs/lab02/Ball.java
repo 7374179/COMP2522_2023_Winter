@@ -1,15 +1,19 @@
 package org.bcit.comp2522.labs.lab02;
 
-import java.util.Arrays;
-import java.util.Objects;
-
 import static processing.core.PApplet.atan2;
 import static processing.core.PApplet.cos;
 import static processing.core.PApplet.sin;
 import static processing.core.PApplet.sqrt;
 
+import java.util.Arrays;
+import java.util.Objects;
+
+
 /**
  * Class for a Ball to be displayed onscreen.
+ *
+ * @author Tae Hyung Lee and Taehyuk Chung
+ * @version 17.0.4.1
  */
 public class Ball extends Collidable {
   protected float xpos;
@@ -22,7 +26,7 @@ public class Ball extends Collidable {
   private Window window;
 
   Ball(float xin, float yin, float din, int idin, Ball[] oin, Window scene) {
-//    super(xin, yin, din, oin, scene);
+
     this.xpos = xin;
     this.ypos = yin;
     this.diameter = din;
@@ -30,7 +34,6 @@ public class Ball extends Collidable {
     this.others = oin;
     this.window = scene;
   }
-
 
 
   public float getVx() {
@@ -138,16 +141,16 @@ public class Ball extends Collidable {
 
   @Override
   public String toString() {
-    return "Ball{" +
-            "xpos=" + xpos +
-            ", ypos=" + ypos +
-            ", diameter=" + diameter +
-            ", vx=" + vx +
-            ", vy=" + vy +
-            ", id=" + id +
-            ", others=" + Arrays.toString(others) +
-            ", window=" + window +
-            '}';
+    return "Ball{"
+            + "xpos=" + xpos
+            + ", ypos=" + ypos
+            + ", diameter=" + diameter
+            + ", vx=" + vx
+            + ", vy=" + vy
+            + ", id=" + id
+            + ", others=" + Arrays.toString(others)
+            + ", window=" + window
+            + '}';
   }
 }
 
