@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09e56c04-c096-484b-aa27-cede7d15a6ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/library/core.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/gluegen-rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/jogl-all.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-aarch64/libgluegen_rt.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-aarch64/libjogl_desktop.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-aarch64/libjogl_mobile.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-aarch64/libnativewindow_awt.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-aarch64/libnativewindow_drm.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-aarch64/libnativewindow_x11.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-aarch64/libnewt_drm.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-aarch64/libnewt_head.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-amd64/libgluegen_rt.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-amd64/libjogl_desktop.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-amd64/libjogl_mobile.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-amd64/libnativewindow_awt.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-amd64/libnativewindow_drm.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-amd64/libnativewindow_x11.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-amd64/libnewt_drm.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-amd64/libnewt_head.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-arm/libgluegen_rt.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-arm/libjogl_desktop.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-arm/libjogl_mobile.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-arm/libnativewindow_awt.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-arm/libnativewindow_drm.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-arm/libnativewindow_x11.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-arm/libnewt_drm.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/linux-arm/libnewt_head.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-aarch64/libgluegen_rt.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-aarch64/libjogl_desktop.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-aarch64/libjogl_mobile.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-aarch64/libnativewindow_awt.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-aarch64/libnativewindow_macosx.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-aarch64/libnewt_head.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-x86_64/libgluegen_rt.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-x86_64/libjogl_desktop.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-x86_64/libjogl_mobile.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-x86_64/libnativewindow_awt.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-x86_64/libnativewindow_macosx.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/macos-x86_64/libnewt_head.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/windows-amd64/fenster.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/windows-amd64/gluegen_rt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/windows-amd64/jogl_desktop.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/windows-amd64/jogl_mobile.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/windows-amd64/nativewindow_awt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/windows-amd64/nativewindow_win32.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/windows-amd64/newt_head.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab02/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab02/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab02/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab02/Mouse.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2K6mZDDhJC5zUwTZ0muobwMY1t3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/73741/Documents/comp2522/datily_assignment/ll-02-7374179",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09e56c04-c096-484b-aa27-cede7d15a6ae" name="Changes" comment="" />
+      <created>1673303460127</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673303460127</updated>
+      <workItem from="1673303461391" duration="1170000" />
+      <workItem from="1673309038604" duration="1162000" />
+      <workItem from="1673310213924" duration="504000" />
+      <workItem from="1673322165370" duration="6831000" />
+      <workItem from="1673383029627" duration="8913000" />
+      <workItem from="1673409109747" duration="4697000" />
+      <workItem from="1673461929637" duration="6000" />
+      <workItem from="1673468167411" duration="1142000" />
+      <workItem from="1673558787800" duration="876000" />
+      <workItem from="1673649833407" duration="4637000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

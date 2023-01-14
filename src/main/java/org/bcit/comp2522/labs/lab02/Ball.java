@@ -22,8 +22,8 @@ public class Ball extends Collidable {
   private float vx = 0;
   private float vy = 0;
   private final int id;
-  private Ball[] others;
-  private Window window;
+  private final Ball[] others;
+  private final Window window;
 
   Ball(float xin, float yin, float din, int idin, Ball[] oin, Window scene) {
 
@@ -123,11 +123,7 @@ public class Ball extends Collidable {
   @Override
   public boolean equals(Object obj) {
     if (obj instanceof Ball) {
-      if (this.diameter == ((Ball) obj).diameter) {
-        return true;
-      }
-
-      return false;
+      return (this.diameter == ((Ball) obj).diameter);
     }
     return false;
   }

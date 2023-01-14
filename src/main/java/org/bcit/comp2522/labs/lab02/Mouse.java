@@ -13,8 +13,8 @@ import static processing.core.PApplet.sqrt;
  */
 public class Mouse extends Collidable {
   private final float diameter = 30;
-  private Window window;
-  private Ball[] others;
+  private final Window window;
+  private final Ball[] others;
 
   /**
    * constructor for Mouse class.
@@ -32,26 +32,22 @@ public class Mouse extends Collidable {
     window.ellipse(window.mouseX, window.mouseY, diameter, diameter);
   }
 
-
   @Override
   public void collide() {
-    for (int i = 0; i < others.length; i++) {
-      float dx = others[i].xpos - window.mouseX;
-      float dy = others[i].ypos - window.mouseY;
+    for (Ball other : others) {
+      float dx = other.xpos - window.mouseX;
+      float dy = other.ypos - window.mouseY;
       float distance = sqrt(dx * dx + dy * dy);
-      float minDist = others[i].diameter / 2 + diameter / 2;
+      float minDist = other.diameter / 2 + diameter / 2;
       if (distance < minDist) {
         float angle = atan2(dy, dx);
         float targetX = window.mouseX + cos(angle) * minDist;
         float targetY = window.mouseY + sin(angle) * minDist;
-        float ax = (targetX - others[i].xpos) * window.spring;
-        float ay = (targetY - others[i].ypos) * window.spring;
+        float ax = (targetX - other.xpos) * window.spring;
+        float ay = (targetY - other.ypos) * window.spring;
 
-
-        others[i].setVx(others[i].getVx() + ax);
-        others[i].setVy(others[i].getVy() + ay);
-
-
+        other.setVx(other.getVx() + ax);
+        other.setVy(other.getVy() + ay);
       }
     }
   }
