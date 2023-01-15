@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="09e56c04-c096-484b-aa27-cede7d15a6ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab02/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab02/Mouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <workItem from="1673666805678" duration="65000" />
       <workItem from="1673667458572" duration="2857000" />
       <workItem from="1673689350504" duration="15000" />
-      <workItem from="1673756501256" duration="826000" />
+      <workItem from="1673756501256" duration="1502000" />
     </task>
     <servers />
   </component>

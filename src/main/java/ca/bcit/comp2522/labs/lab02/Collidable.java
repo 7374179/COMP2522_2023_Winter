@@ -1,4 +1,4 @@
-package org.bcit.comp2522.labs.lab02;
+package ca.bcit.comp2522.labs.lab02;
 
 /**
  * Collidable abstract class.
