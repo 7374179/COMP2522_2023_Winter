@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5a316a-d37d-4c33-a0d2-6edbf76d5dc7" name="Changes" comment="First commit!">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lecture/ll02/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lecture/ll02/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/bcit/comp2522/lecture/ll02/BallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/bcit/comp2522/lecture/ll02/BallTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="0e5a316a-d37d-4c33-a0d2-6edbf76d5dc7" name="Changes" comment="First commit!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,6 +234,7 @@
       <updated>1673396456937</updated>
       <workItem from="1673652776684" duration="4876000" />
       <workItem from="1673666909900" duration="7750000" />
+      <workItem from="1673756528692" duration="402000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!">
       <created>1673398901663</created>
@@ -277,40 +271,6 @@
           <properties class="java.lang.ClassCastException" package="java.lang" />
           <option name="timeStamp" value="8" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/bcit/comp2522/lecture/ll02/BallTest.java</url>
-          <line>54</line>
-          <properties class="org.bcit.comp2522.lecture.ll02.BallTest" method="testSort">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/bcit/comp2522/lecture/ll02/BallTest.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/bcit/comp2522/lecture/ll02/BallTest.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/bcit/comp2522/lecture/ll02/BallTest.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/bcit/comp2522/lecture/ll02/BallTest.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/bcit/comp2522/lecture/ll02/BallTest.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

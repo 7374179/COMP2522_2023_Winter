@@ -35,7 +35,8 @@ public class Window extends PApplet {
     /* Create a new set of balls with random sizes. */
     Random rand = new Random();
     for (int i = 0; i < numCollidables; i++) {
-      if (rand.nextInt(-1, 1) < 0) {
+//      if (rand.nextInt(-1, 1) < 0) {
+      if (rand.nextInt(1) < 0) {
         collidables[i] = new Ball(
           random(width),
           random(height),
