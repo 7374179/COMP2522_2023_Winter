@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * Class for a Ball to be displayed onscreen.
  */
-public class Ball extends Collidable {
+public class Ball extends Collidable implements Comparable{
   private final float diameter;
 
   Ball(float xin, float yin, float din, int idin, Collidable[] oin, Window scene) {
@@ -15,8 +15,10 @@ public class Ball extends Collidable {
 
   @Override
   public boolean equals(Object o) {
-    Ball ball = (Ball) o;
-    return Float.compare(ball.diameter, diameter) == 0;
+    if(o instanceof Ball){
+      return this.diameter == ((Ball)o).diameter;
+    }
+    return false;
   }
 
   @Override
@@ -60,6 +62,11 @@ public class Ball extends Collidable {
   @Override
   public float getSize() {
     return this.diameter;
+  }
+
+  @Override
+  public int compareTo(Object o) {
+      return (int)(this.diameter - ((Ball)o).diameter);
   }
 
 }

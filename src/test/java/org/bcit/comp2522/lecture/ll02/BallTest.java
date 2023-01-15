@@ -15,6 +15,7 @@ class BallTest {
   Ball ball0;
   Ball ball1;
   Box box2;
+
   Window window;
   Collidable[] collidables;
 
@@ -58,5 +59,4 @@ class BallTest {
     System.out.println(l);
     assertTrue(l.get(1) == ball0);
   }
-
 }
