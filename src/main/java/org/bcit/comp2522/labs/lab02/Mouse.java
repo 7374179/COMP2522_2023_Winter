@@ -52,11 +52,8 @@ public class Mouse extends Collidable {
     }
   }
 
-
   @Override
   public void move() {
-
   }
-
 }
 
