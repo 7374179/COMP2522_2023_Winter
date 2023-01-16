@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3df857-b862-4625-a637-781de8a0105f" name="Changes" comment="Adding comments and Tail functionality.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Wall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/bcit/com2522/labs/lab03/SpriteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Ball.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Box.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Sprite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Window.java" afterDir="false" />
     </list>
@@ -38,11 +40,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Lab-03" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Lab-03" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -53,6 +50,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -80,19 +78,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/paul_bucci/IdeaProjects/Lab-02&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "C:/Users/73741/Documents/comp2522/lab/lab-03-tae-tae/src/test/java",
+    "last_opened_file_path": "C:/Users/73741/Documents/comp2522/lab/lab-03-tae-tae",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\paul_bucci\IdeaProjects\Lab-03" />
       <recent name="C:\Users\paul_bucci\IdeaProjects\Lab-03\lib" />
       <recent name="C:\Users\paul_bucci\IdeaProjects\Lab-03\src\main\java\org\bcit\com2522\labs\lab03" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.bcit.com2522.labs.lab03" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.bcit.com2522.labs.lab03" />
@@ -177,6 +190,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663180164711</updated>
+      <workItem from="1673904658852" duration="6301000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!">
       <created>1663366541838</created>
@@ -208,6 +222,9 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

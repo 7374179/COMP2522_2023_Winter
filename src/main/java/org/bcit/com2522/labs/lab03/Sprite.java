@@ -3,14 +3,18 @@ package org.bcit.com2522.labs.lab03;
 import processing.core.PVector;
 
 import java.awt.*;
+import java.util.Objects;
 
-public class Sprite {
+import static java.awt.SystemColor.window;
+
+public class Sprite implements Comparable <Sprite> {
+  private final Window window;
   private PVector position;
   private PVector direction;
   private float size;
   private float speed;
   private Color color;
-  private Window window;
+
 
 
   public Sprite(PVector position, PVector direction, float size, float speed, Color color, Window window) {
@@ -66,4 +70,23 @@ public class Sprite {
     this.direction = direction;
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Sprite sprite = (Sprite) o;
+    return Float.compare(sprite.size, size) == 0 && Float.compare(sprite.speed, speed) == 0 && Objects.equals(position, sprite.position) && Objects.equals(direction, sprite.direction) && Objects.equals(color, sprite.color) && Objects.equals(window, sprite.window);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(position, direction, size, speed, color, window);
+  }
+
+
+
+  @Override
+  public int compareTo(Sprite o) {
+    return (int)this.size - (int)((Sprite)o).getSize();
+  }
 }

@@ -100,7 +100,13 @@ public class Window extends PApplet {
     }
     for (Sprite enemy : toRemove) {
       // TODO: implement compareTo and equals to make this work
-      enemies.remove(enemy);
+//      if(player.getSize().compareTo((Sprite)enemy)>0){
+      if(player.compareTo(enemy) < 0){
+        init();
+      }else {
+        sprites.remove(enemy);
+      }
+
     }
 
   }
