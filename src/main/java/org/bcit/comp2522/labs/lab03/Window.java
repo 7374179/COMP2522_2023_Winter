@@ -89,10 +89,18 @@ public class Window extends PApplet {
    */
   public void draw() {
     background(0);
+
+
+
     for (Sprite sprite : sprites) {
       sprite.update();
       sprite.draw();
+
     }
+
+//    Wall wall = new Wall(50, 50, 50, new Sprite[]{player}, this);
+//    wall.draw();
+//    wall.collide();
     ArrayList<Sprite> toRemove = new ArrayList<Sprite>();
     for (Sprite enemy : enemies) {
       if (Sprite.collided(player, enemy)) {

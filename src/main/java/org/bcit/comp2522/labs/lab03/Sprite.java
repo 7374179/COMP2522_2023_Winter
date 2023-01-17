@@ -6,7 +6,7 @@ import java.awt.*;
 import java.util.Objects;
 
 public class Sprite implements Comparable <Sprite> {
-  private final org.bcit.comp2522.labs.lab03.Window window;
+  private final Window window;
   private PVector position;
   private PVector direction;
   private float size;

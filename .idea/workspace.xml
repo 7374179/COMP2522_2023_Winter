@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac3df857-b862-4625-a637-781de8a0105f" name="Changes" comment="Adding comments and Tail functionality.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/bcit/comp2522/labs/lab03/SpriteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="ac3df857-b862-4625-a637-781de8a0105f" name="Changes" comment="implemented SpriteTest.java and changed the compareTo method inside Sprite.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Sprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/com2522/labs/lab03/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/bcit/com2522/labs/lab03/SpriteTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Sprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,28 +74,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_directory_selection": "C:/Users/73741/Documents/comp2522/lab/lab-03-tae-tae/src/test/java",
-    "last_opened_file_path": "C:/Users/73741/Documents/comp2522/lab/lab-03-tae-tae",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/73741/Documents/comp2522/lab/lab-03-tae-tae/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/73741/Documents/comp2522/lab/lab-03-tae-tae&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\paul_bucci\IdeaProjects\Lab-03" />
@@ -126,7 +114,7 @@
       <recent name="org.bcit.com2522.labs.lab03" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpriteTest.compareTo2">
+  <component name="RunManager" selected="Application.Window">
     <configuration name="BouncyBubbles" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -232,9 +220,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Window" />
         <item itemvalue="JUnit.SpriteTest.compareTo2" />
         <item itemvalue="JUnit.SpriteTest" />
-        <item itemvalue="Application.Window" />
         <item itemvalue="JUnit.SpriteTest.compareTo" />
         <item itemvalue="Application.SpriteTest" />
       </list>
@@ -278,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673884711793</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented SpriteTest.java and changed the compareTo method inside Sprite.java">
+      <created>1673915550199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673915550199</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +293,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit!" />
     <MESSAGE value="Adding comments and Tail functionality." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding comments and Tail functionality." />
+    <MESSAGE value="implemented SpriteTest.java and changed the compareTo method inside Sprite.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented SpriteTest.java and changed the compareTo method inside Sprite.java" />
   </component>
 </project>
