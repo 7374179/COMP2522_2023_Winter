@@ -3,8 +3,8 @@ package org.bcit.comp2522.lectures.sl03;
 import java.util.Arrays;
 
 public class Letter implements Comparable {
-//  public static String order = "ZXEFTSRKPILGAMYBVUCQOWDNJH";
-  public static String order = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
+  public static String order = "ZXEFTSRKPILGAMYBVUCQOWDNJH";
+//  public static String order = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
 
   String val;
 
@@ -17,10 +17,11 @@ public class Letter implements Comparable {
   }
 
   public int compareTo(Object o) {
-    if (((Letter) o).val.compareTo(this.val)>0){
-      return 1;
-    }else if(((Letter) o).val.compareTo(this.val)<0){
+    Letter letters = (Letter)o;
+    if(order.indexOf(letters.val)-order.indexOf(this.val)>0){
       return -1;
+    }else if(order.indexOf(letters.val)-order.indexOf(this.val)<0){
+      return 1;
     }else {
       return 0;
     }
