@@ -1,20 +1,17 @@
-package org.bcit.com2522.labs.lab03;
+package org.bcit.comp2522.labs.lab03;
 
 import processing.core.PVector;
 
 import java.awt.*;
 import java.util.Objects;
 
-import static java.awt.SystemColor.window;
-
 public class Sprite implements Comparable <Sprite> {
-  private final Window window;
+  private final org.bcit.comp2522.labs.lab03.Window window;
   private PVector position;
   private PVector direction;
   private float size;
   private float speed;
   private Color color;
-
 
 
   public Sprite(PVector position, PVector direction, float size, float speed, Color color, Window window) {
@@ -28,9 +25,9 @@ public class Sprite implements Comparable <Sprite> {
 
   public void bounce() {
     if (this.position.x <= 0 ||
-        this.position.x >= window.width ||
-        this.position.y <= 0 ||
-        this.position.y >= window.height) {
+            this.position.x >= window.width ||
+            this.position.y <= 0 ||
+            this.position.y >= window.height) {
       this.direction.rotate(window.HALF_PI);
     }
   }
@@ -51,6 +48,7 @@ public class Sprite implements Comparable <Sprite> {
   public float getSize() {
     return size;
   }
+
   public static boolean collided(Sprite a, Sprite b) {
     float distance = PVector.dist(a.getPosition(), b.getPosition());
     if (distance <= (a.getSize() + b.getSize())) {
@@ -84,9 +82,14 @@ public class Sprite implements Comparable <Sprite> {
   }
 
 
-
   @Override
   public int compareTo(Sprite o) {
-    return (int)this.size - (int)((Sprite)o).getSize();
+    if ((int) this.size == (int) ((Sprite) o).getSize()) {
+      return 0;
+    } else if ((int) this.size > (int) ((Sprite) o).getSize()) {
+      return 1;
+    } else {
+      return -1;
+    }
   }
 }

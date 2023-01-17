@@ -1,4 +1,4 @@
-package org.bcit.com2522.labs.lab03;
+package org.bcit.comp2522.labs.lab03;
 
 import processing.core.PVector;
 

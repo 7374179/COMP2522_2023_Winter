@@ -1,4 +1,4 @@
-package org.bcit.com2522.labs.lab03;
+package org.bcit.comp2522.labs.lab03;
 
 import processing.core.PApplet;
 import processing.core.PVector;
@@ -39,6 +39,7 @@ public class Window extends PApplet {
    */
   public void setup() {
     this.init();
+
   }
 
   public void init() {
@@ -103,8 +104,10 @@ public class Window extends PApplet {
 //      if(player.getSize().compareTo((Sprite)enemy)>0){
       if(player.compareTo(enemy) < 0){
         init();
-      }else {
+      }else if (player.compareTo(enemy) > 0){
         sprites.remove(enemy);
+      } else{
+        continue;
       }
 
     }
