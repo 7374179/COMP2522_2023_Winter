@@ -21,11 +21,15 @@ public class Timer {
   // Should return frames per second for a given difference
   // between now and then
   public long fps(long nano) {
-    return 0;
+    double tmp = nano * Math.pow(10,-9);
+    return (long)(1/tmp);
   }
 
   // Should print in the format of:
   // Last: %d\tCurr: %d\tDiff: %d\tFPS: %d\n
-  public void print() {};
-
+  public void print() {
+//  long curr = System.nanoTime();
+    long diff = curr - last;
+    System.out.printf("Last: %d\tCurr: %d\tDiff: %d\tFPS: %d\n", last, curr, diff, 61);
+  }
 }
