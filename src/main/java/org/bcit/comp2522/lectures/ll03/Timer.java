@@ -30,6 +30,6 @@ public class Timer {
   public void print() {
 //  long curr = System.nanoTime();
     long diff = curr - last;
-    System.out.printf("Last: %d\tCurr: %d\tDiff: %d\tFPS: %d\n", last, curr, diff, 61);
+    System.out.format("Last: %d\tCurr: %d\tDiff: %d\tFPS: %d\n", last, curr, diff, 61);
   }
 }
