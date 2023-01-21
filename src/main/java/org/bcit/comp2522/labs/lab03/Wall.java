@@ -1,44 +1,16 @@
 package org.bcit.comp2522.labs.lab03;
 
-import processing.core.*;
-
 import processing.core.PVector;
 
 import java.awt.*;
+import java.util.ArrayList;
 
-public class Wall extends PApplet {
+public class Wall extends Sprite {
 
-  private final Window window;
-  private PVector position;
-  private PVector direction;
-  private float size;
-  private float speed;
-  private Color color;
+  private Sprite sprite;
 
-  public Wall(Window window, PVector position, PVector direction, float size, float speed, Color color) {
-    this.window = window;
-    this.position = position;
-
-    this.direction = direction;
-    this.size = size;
-    this.speed = speed;
-    this.color = color;
-  }
-
-
-
-  public void draw() {
-    window.rect();
-  }
-
-
-  public void collide() {
+  public Wall(PVector position, PVector direction, float size, float speed, Color color, Window window, Sprite sprites) {
+    super(position, direction, size, speed, color, window);
 
   }
-
-
-
 }
-
-
-

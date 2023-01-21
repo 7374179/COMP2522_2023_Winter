@@ -5,11 +5,11 @@ import processing.core.PVector;
 import java.awt.*;
 import java.util.Objects;
 
-public class Sprite implements Comparable <Sprite> {
-  private final Window window;
-  private PVector position;
-  private PVector direction;
-  private float size;
+public class Sprite implements Comparable  {
+  protected final Window window;
+  protected PVector position;
+  protected PVector direction;
+  protected float size;
   private float speed;
   private Color color;
 
@@ -24,13 +24,18 @@ public class Sprite implements Comparable <Sprite> {
   }
 
   public void bounce() {
-    if (this.position.x <= 0 ||
+    if (this.position.x <= 0||
             this.position.x >= window.width ||
             this.position.y <= 0 ||
             this.position.y >= window.height) {
       this.direction.rotate(window.HALF_PI);
     }
   }
+
+  public void bounceoff(){
+    this.direction.rotate(window.HALF_PI);  }
+
+
 
   public PVector getDirection() {
     return direction.copy();
@@ -49,9 +54,13 @@ public class Sprite implements Comparable <Sprite> {
     return size;
   }
 
-  public static boolean collided(Sprite a, Sprite b) {
-    float distance = PVector.dist(a.getPosition(), b.getPosition());
-    if (distance <= (a.getSize() + b.getSize())) {
+  public void setSize(float size){
+    this.size = size;
+  }
+
+  public boolean collided(Sprite other) {
+    float distance = PVector.dist(this.getPosition(), other.getPosition());
+    if (distance <= (this.getSize() + other.getSize())) {
       return true;
     }
     return false;
@@ -81,15 +90,23 @@ public class Sprite implements Comparable <Sprite> {
     return Objects.hash(position, direction, size, speed, color, window);
   }
 
-
   @Override
-  public int compareTo(Sprite o) {
-    if ((int) this.size == (int) ((Sprite) o).getSize()) {
-      return 0;
-    } else if ((int) this.size > (int) ((Sprite) o).getSize()) {
-      return 1;
-    } else {
-      return -1;
+  public int compareTo(Object o) {
+    if (o == null) {
+      throw new NullPointerException();
     }
+    if (o instanceof Sprite) {
+      Sprite s = (Sprite) o;
+      if (s.size < this.size) {
+        return 1;
+      }
+      if (s.size == this.size) {
+        return 0;
+      }
+      if (s.size > this.size) {
+        return -1;
+      }
+    }
+    throw new ClassCastException();
   }
 }

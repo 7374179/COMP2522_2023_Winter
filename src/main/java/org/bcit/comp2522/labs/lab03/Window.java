@@ -21,6 +21,8 @@ public class Window extends PApplet {
   ArrayList<Sprite> sprites;
   ArrayList<Sprite> enemies;
   Sprite player;
+
+  Wall wall;
   int numEnemies = 10;
   int minSize = 10;
   int maxSize = 20;
@@ -48,7 +50,7 @@ public class Window extends PApplet {
     player = new Sprite(
       new PVector(this.width/2,this.height/2),
       new PVector(0,1),
-      minSize + 1,
+      minSize + 5,
       2,
       new Color(0,255,0),
       this);
@@ -89,37 +91,47 @@ public class Window extends PApplet {
    */
   public void draw() {
     background(0);
-
-
-
+    Wall wall = new Wall(new PVector(120,80), new PVector(1,1), 50, 1, new Color(255, 255, 255), this, player);
     for (Sprite sprite : sprites) {
+//      wall.update();
+//      wall.draw();
+
+      if(wall.collided(sprite)){
+        sprite.bounce();
+      }
       sprite.update();
       sprite.draw();
-
     }
 
-//    Wall wall = new Wall(50, 50, 50, new Sprite[]{player}, this);
-//    wall.draw();
-//    wall.collide();
+
+
     ArrayList<Sprite> toRemove = new ArrayList<Sprite>();
     for (Sprite enemy : enemies) {
-      if (Sprite.collided(player, enemy)) {
-        toRemove.add(enemy);
+
+      if (player.collided(enemy)) {
+        if(player.compareTo(enemy) == -1){
+          init();
+        }
+        if (player.compareTo(enemy) == 1){
+          toRemove.add(enemy);
+//          player.bounce();
+          player.size += enemy.size;
+        }
       }
     }
+
     for (Sprite enemy : toRemove) {
       // TODO: implement compareTo and equals to make this work
 //      if(player.getSize().compareTo((Sprite)enemy)>0){
-      if(player.compareTo(enemy) < 0){
-        init();
-      }else if (player.compareTo(enemy) > 0){
-        sprites.remove(enemy);
-      } else{
-        continue;
-      }
+        this.remove(enemy);
 
     }
 
+  }
+
+  public void remove(Sprite s) {
+    enemies.remove(s);
+    sprites.remove(s);
   }
 
 
