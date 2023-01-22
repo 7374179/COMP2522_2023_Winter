@@ -96,7 +96,7 @@ public class Window extends PApplet {
 
       wall.draw();
 
-      if(sprite.collided(wall) || sprite.position== new PVector(300,100)){
+      if(sprite.collided(wall)){
         sprite.bounceoff();
       }
       sprite.update();
@@ -126,6 +126,7 @@ public class Window extends PApplet {
       // TODO: implement compareTo and equals to make this work
 
         this.remove(enemy);
+        player.setSize(player.getSize() + enemy.getSize());
 
     }
 
