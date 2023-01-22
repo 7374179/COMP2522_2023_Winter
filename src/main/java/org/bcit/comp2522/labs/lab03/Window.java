@@ -96,8 +96,8 @@ public class Window extends PApplet {
 
       wall.draw();
 
-      if(sprite.collided(wall) || sprite.position== new PVector(300,100)){
-        sprite.bounceoff();
+      if(player.collided(wall)){
+        player.bounceoff();
       }
       sprite.update();
       sprite.draw();
@@ -107,8 +107,6 @@ public class Window extends PApplet {
 
     ArrayList<Sprite> toRemove = new ArrayList<Sprite>();
     for (Sprite enemy : enemies) {
-
-
       if (player.collided(enemy)) {
 
         if(player.compareTo(enemy) == -1){
@@ -116,8 +114,8 @@ public class Window extends PApplet {
         }
         if (player.compareTo(enemy) == 1){
           toRemove.add(enemy);
-//          player.bounce();
-//          player.size += enemy.size;
+
+          player.setSize(player.getSize()+ enemy.getSize());
         }
       }
     }

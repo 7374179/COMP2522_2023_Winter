@@ -9,7 +9,7 @@ public class Sprite implements Comparable  {
   protected final Window window;
   protected PVector position;
   protected PVector direction;
-  protected float size;
+  private float size;
   private float speed;
   private Color color;
 
