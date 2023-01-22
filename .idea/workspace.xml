@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3df857-b862-4625-a637-781de8a0105f" name="Changes" comment="implemented SpriteTest.java and changed the compareTo method inside Sprite.java">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Sprite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Wall.java" afterDir="false" />
@@ -31,12 +33,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Lab-03" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -145,7 +142,6 @@
     </configuration>
     <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.bcit.comp2522.labs.lab03.Window" />
-      <module name="Lab-03_main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.bcit.comp2522.labs.lab03.*" />
@@ -237,6 +233,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663180164711</updated>
       <workItem from="1673904658852" duration="6301000" />
+      <workItem from="1674360383422" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!">
       <created>1663366541838</created>
@@ -295,5 +292,9 @@
     <MESSAGE value="Adding comments and Tail functionality." />
     <MESSAGE value="implemented SpriteTest.java and changed the compareTo method inside Sprite.java" />
     <option name="LAST_COMMIT_MESSAGE" value="implemented SpriteTest.java and changed the compareTo method inside Sprite.java" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

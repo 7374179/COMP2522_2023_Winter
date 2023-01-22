@@ -97,7 +97,7 @@ public class Window extends PApplet {
       wall.draw();
 
       if(sprite.collided(wall) || sprite.position== new PVector(300,100)){
-        sprite.bounceoff();
+        wall.bounce();
       }
       sprite.update();
       sprite.draw();

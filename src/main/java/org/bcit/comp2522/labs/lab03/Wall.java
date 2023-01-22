@@ -13,4 +13,8 @@ public class Wall extends Sprite {
     super(position, direction, size, speed, color, window);
 
   }
+//    @Override
+//    public void bounce() {
+//        this.direction.rotate(window.HALF_PI);
+//    }
 }
