@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac3df857-b862-4625-a637-781de8a0105f" name="Changes" comment="Implemented bounceoff method inside Sprite.java to allow sprites to bounce off the wall if they collided">
+    <list default="true" id="ac3df857-b862-4625-a637-781de8a0105f" name="Changes" comment="implemented SpriteTest.java and changed the compareTo method inside Sprite.java">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Sprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Wall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/labs/lab03/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,12 +33,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Lab-03" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -46,9 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -86,7 +82,7 @@
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/73741/Documents/comp2522/lab/lab-03-tae-tae/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/teihy/OneDrive/Desktop/교재(cst)/term 2/2522/lecture assignment/ll-03-teihyung&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/73741/Documents/comp2522/lab/lab-03-tae-tae&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -98,9 +94,6 @@
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.bcit.comp2522.labs.lab03" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\paul_bucci\IdeaProjects\Lab-03" />
       <recent name="C:\Users\paul_bucci\IdeaProjects\Lab-03\lib" />
@@ -108,9 +101,6 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="org.bcit.comp2522.labs.lab03" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.bcit.comp2522.labs.lab03" />
@@ -152,7 +142,6 @@
     </configuration>
     <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.bcit.comp2522.labs.lab03.Window" />
-      <module name="Lab-03_main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.bcit.comp2522.labs.lab03.*" />
@@ -244,6 +233,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663180164711</updated>
       <workItem from="1673904658852" duration="6301000" />
+      <workItem from="1674360383422" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!">
       <created>1663366541838</created>
@@ -280,28 +270,7 @@
       <option name="project" value="LOCAL" />
       <updated>1673915550199</updated>
     </task>
-    <task id="LOCAL-00006" summary="Created Wall.java class">
-      <created>1673937153309</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1673937153309</updated>
-    </task>
-    <task id="LOCAL-00007" summary="correctly implemented wall.java properly and add added a line inside draw method that when player eats smaller sprite, it grow bigger inside Window.java">
-      <created>1674324420263</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1674324420264</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Implemented bounceoff method inside Sprite.java to allow sprites to bounce off the wall if they collided">
-      <created>1674361268181</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1674361268181</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,10 +291,10 @@
     <MESSAGE value="First commit!" />
     <MESSAGE value="Adding comments and Tail functionality." />
     <MESSAGE value="implemented SpriteTest.java and changed the compareTo method inside Sprite.java" />
-    <MESSAGE value="implemented SpriteTest.java and changed the compareTo method inside Sprite.java and created Wall.java" />
-    <MESSAGE value="Created Wall.java class" />
-    <MESSAGE value="correctly implemented wall.java properly and add added a line inside draw method that when player eats smaller sprite, it grow bigger inside Window.java" />
-    <MESSAGE value="Implemented bounceoff method inside Sprite.java to allow sprites to bounce off the wall if they collided" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented bounceoff method inside Sprite.java to allow sprites to bounce off the wall if they collided" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented SpriteTest.java and changed the compareTo method inside Sprite.java" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

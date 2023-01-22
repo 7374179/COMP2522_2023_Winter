@@ -60,7 +60,7 @@ public class Sprite implements Comparable  {
 
   public boolean collided(Sprite other) {
     float distance = PVector.dist(this.getPosition(), other.getPosition());
-    if (distance <= (this.getSize() + other.getSize())) {
+    if (distance <= (this.getSize()/2 + other.getSize()/2)) {
       return true;
     }
     return false;
