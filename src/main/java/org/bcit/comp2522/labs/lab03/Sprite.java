@@ -5,7 +5,7 @@ import processing.core.PVector;
 import java.awt.*;
 import java.util.Objects;
 
-public class Sprite implements Comparable  {
+public class Sprite implements Comparable, Ability  {
   protected final Window window;
   protected PVector position;
   protected PVector direction;
@@ -58,6 +58,7 @@ public class Sprite implements Comparable  {
     this.size = size;
   }
 
+  @Override
   public boolean collided(Sprite other) {
     float distance = PVector.dist(this.getPosition(), other.getPosition());
     if (distance <= (this.getSize()/2 + other.getSize()/2)) {
@@ -109,6 +110,7 @@ public class Sprite implements Comparable  {
     }
     throw new ClassCastException();
   }
+
 
 
 }
