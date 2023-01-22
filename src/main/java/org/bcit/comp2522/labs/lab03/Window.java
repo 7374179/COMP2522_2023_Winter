@@ -1,11 +1,11 @@
 package org.bcit.comp2522.labs.lab03;
 
+import java.awt.*;
+import java.util.ArrayList;
 import processing.core.PApplet;
 import processing.core.PVector;
 import processing.event.KeyEvent;
 
-import java.awt.*;
-import java.util.ArrayList;
 
 /**
  * Lab-02 starter code.
@@ -15,14 +15,13 @@ import java.util.ArrayList;
  * multiple-object collision.
  *
  * @author paul_bucci
- *
  */
 public class Window extends PApplet {
   ArrayList<Sprite> sprites;
   ArrayList<Sprite> enemies;
-  Sprite player;
+  //  Sprite player;
+  Player player;
 
-  Wall wall;
   int numEnemies = 10;
   int minSize = 10;
   int maxSize = 20;
@@ -41,47 +40,37 @@ public class Window extends PApplet {
    */
   public void setup() {
     this.init();
-
   }
 
+  /**
+   * sets the initialized values.
+   */
   public void init() {
-    enemies = new ArrayList<Sprite>();
-    sprites = new ArrayList<Sprite>();
-    player = new Sprite(
-      new PVector(this.width/2,this.height/2),
-      new PVector(0,1),
-      minSize + 5,
-      2,
-      new Color(0,255,0),
-      this);
+    enemies = new ArrayList<>();
+    sprites = new ArrayList<>();
+    player = new Player(new PVector((float)this.width / 2, (float)this.height / 2),
+        new PVector(0, 1),
+        minSize + 5,
+        2,
+        new Color(0, 255, 0),
+        this);
 
     for (int i = 0; i < numEnemies; i++) {
       enemies.add(new Sprite(
-        new PVector(random(0, this.width), random(0, this.height)),
-        new PVector(random(-1, 1), random(-1,1)),
-        random(minSize, maxSize),
-        random(0,2),
-        new Color(255, 0, 0),
-        this
+          new PVector(random(0, this.width), random(0, this.height)),
+          new PVector(random(-1, 1), random(-1, 1)),
+          random(minSize, maxSize),
+          random(0, 2),
+          new Color(255, 0, 0),
+          this
       ));
     }
     sprites.addAll(enemies);
     sprites.add(player);
   }
 
-  @Override
   public void keyPressed(KeyEvent event) {
-    int keyCode = event.getKeyCode();
-    switch( keyCode ) {
-      case LEFT:
-        // handle left
-        player.setDirection(player.getDirection().rotate(-Window.PI / 16));
-        break;
-      case RIGHT:
-        // handle right
-        player.setDirection(player.getDirection().rotate(Window.PI / 16));
-        break;
-    }
+    player.move(event);
   }
 
   /**
@@ -91,33 +80,31 @@ public class Window extends PApplet {
    */
   public void draw() {
     background(0);
-    Wall wall = new Wall(new PVector(300,100), new PVector(0,0), 20, 0, new Color(255, 255, 255), this);
+    Wall wall = new Wall(new PVector(300, 100), new PVector(0, 0),
+        20, 0, new Color(255, 255, 255), this);
     for (Sprite sprite : sprites) {
 
       wall.draw();
 
-      if(sprite.collided(wall)){
-        sprite.bounceoff();
+      if (sprite.collided(wall)) {
+        sprite.bounceOff();
       }
       sprite.update();
       sprite.draw();
     }
 
 
-
-    ArrayList<Sprite> toRemove = new ArrayList<Sprite>();
+    ArrayList<Sprite> toRemove = new ArrayList<>();
     for (Sprite enemy : enemies) {
 
 
       if (player.collided(enemy)) {
 
-        if(player.compareTo(enemy) == -1){
+        if (player.compareTo(enemy) < 0) {
           init();
         }
-        if (player.compareTo(enemy) == 1){
+        if (player.compareTo(enemy) > 0) {
           toRemove.add(enemy);
-//          player.bounce();
-//          player.size += enemy.size;
         }
       }
     }
@@ -125,8 +112,8 @@ public class Window extends PApplet {
     for (Sprite enemy : toRemove) {
       // TODO: implement compareTo and equals to make this work
 
-        this.remove(enemy);
-        player.setSize(player.getSize() + enemy.getSize());
+      this.remove(enemy);
+      player.setSize(player.getSize() + enemy.getSize());
 
     }
 
