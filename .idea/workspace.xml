@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0814a294-91b3-4771-a0e2-e8c8c5e821c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/core.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/gluegen-rt.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/jogl-all.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libgluegen_rt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libjogl_desktop.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libjogl_mobile.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnativewindow_awt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnativewindow_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnativewindow_x11.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnewt_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnewt_head.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libgluegen_rt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libjogl_desktop.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libjogl_mobile.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnativewindow_awt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnativewindow_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnativewindow_x11.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnewt_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnewt_head.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libgluegen_rt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libjogl_desktop.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libjogl_mobile.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnativewindow_awt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnativewindow_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnativewindow_x11.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnewt_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnewt_head.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libgluegen_rt.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libjogl_desktop.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libjogl_mobile.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libnativewindow_awt.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libnativewindow_macosx.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libnewt_head.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libgluegen_rt.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libjogl_desktop.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libjogl_mobile.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libnativewindow_awt.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libnativewindow_macosx.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libnewt_head.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/fenster.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/gluegen_rt.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/jogl_desktop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/jogl_mobile.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/nativewindow_awt.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/nativewindow_win32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/newt_head.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/sl04/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/sl04/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/sl04/Sprite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/sl04/Timer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/sl04/Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/bcit/comp2522/lectures/sl04/PlayerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SL-04" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2KjfUWxKf7Mce3FubRoEyjx6FQk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/paul_bucci/IdeaProjects/SL-04"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\paul_bucci\IdeaProjects\SL-04" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.bcit.comp2522.lectures.sl04" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.bcit.comp2522.lectures.sl04.Window" />
+      <module name="SL-04.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bcit.comp2522.lectures.sl04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Window" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0814a294-91b3-4771-a0e2-e8c8c5e821c5" name="Changes" comment="" />
+      <created>1674492928436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674492928436</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
