@@ -22,6 +22,9 @@ public class Sprite implements Comparable {
     this.color = color;
   }
 
+  public Sprite() {
+  }
+
   public void bounce() {
     if (this.position.x <= 0 ||
         this.position.x >= window.width ||

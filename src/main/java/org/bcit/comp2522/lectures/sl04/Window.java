@@ -45,7 +45,7 @@ public class Window extends PApplet {
     timer = Timer.getInstance();
     enemies = new ArrayList<Sprite>();
     sprites = new ArrayList<Sprite>();
-    player = new Player(
+    player = Player.getInstance(
       new PVector(this.width/2,this.height/2),
       new PVector(0,1),
       minSize + 5,

@@ -6,9 +6,7 @@ public class Timer {
   public final long start;
   private static Timer timer;
 
-  private Timer() {
-    start = System.nanoTime();
-  };
+  private Timer() { start = System.nanoTime(); };
 
   public static Timer getInstance() {
     if (timer == null) {

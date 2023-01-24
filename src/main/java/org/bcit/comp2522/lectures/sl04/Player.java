@@ -8,10 +8,41 @@ import java.awt.*;
 
 public class Player extends Sprite {
   private long uid;
-  public Player(PVector position, PVector direction, float size, float speed, Color color, Window window) {
+
+  static Player player;
+
+  private Player(PVector position, PVector direction, float size, float speed, Color color, Window window) {
     super(position, direction, size, speed, color, window);
     this.uid = System.nanoTime();
   }
+
+  public static Player getInstance(PVector position, PVector direction, float size, float speed, Color color, Window window) {
+    if (player == null) {
+      player = new Player(position, direction, size, speed, color, window);
+      player.uid = System.nanoTime();
+    }
+    return player;
+  }
+
+  public static Player getInstance() {
+    if(player == null){
+      player.uid = System.nanoTime();
+      return player;
+    }
+    return player;
+  }
+
+//  private Player(){
+////    super();
+//    player.getUid();
+//  }
+//  public static Player getInstance() {
+//    if (player == null) {
+//      player = new Player();
+//    }
+//    return player;
+//  }
+
 
   public long getUid() {
     return uid;
