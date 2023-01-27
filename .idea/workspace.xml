@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6b0d75cb-4467-4332-b81a-09cec6e66489" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/core.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/gluegen-rt.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/jogl-all.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libgluegen_rt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libjogl_desktop.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libjogl_mobile.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnativewindow_awt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnativewindow_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnativewindow_x11.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnewt_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-aarch64/libnewt_head.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libgluegen_rt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libjogl_desktop.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libjogl_mobile.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnativewindow_awt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnativewindow_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnativewindow_x11.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnewt_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-amd64/libnewt_head.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libgluegen_rt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libjogl_desktop.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libjogl_mobile.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnativewindow_awt.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnativewindow_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnativewindow_x11.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnewt_drm.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/linux-arm/libnewt_head.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libgluegen_rt.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libjogl_desktop.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libjogl_mobile.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libnativewindow_awt.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libnativewindow_macosx.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-aarch64/libnewt_head.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libgluegen_rt.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libjogl_desktop.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libjogl_mobile.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libnativewindow_awt.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libnativewindow_macosx.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/macos-x86_64/libnewt_head.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/fenster.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/gluegen_rt.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/jogl_desktop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/jogl_mobile.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/nativewindow_awt.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/nativewindow_win32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/windows-amd64/newt_head.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/ll04/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/ll04/CompoundGraphic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/ll04/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/ll04/Graphic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/ll04/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/ll04/Sprite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/ll04/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/lectures/ll04/Window.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2KvBTdPv9HgJLZCz9y6Yz1ZwbNe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/paul_bucci/IdeaProjects/LL-04/src/main/java/org/bcit/comp2522/lectures/ll04",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\paul_bucci\IdeaProjects\LL-04\src\main\java\org\bcit\comp2522\lectures\ll04" />
+      <recent name="C:\Users\paul_bucci\IdeaProjects\LL-04" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.bcit.comp2522.lectures.ll04.Window" />
+      <module name="LL-04.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bcit.comp2522.lectures.ll04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Window" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b0d75cb-4467-4332-b81a-09cec6e66489" name="Changes" comment="" />
+      <created>1674845187885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674845187885</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
