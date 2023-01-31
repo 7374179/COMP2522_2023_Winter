@@ -5,7 +5,17 @@ import java.util.Iterator;
 public class MyLinkedList implements Iterable {
   Node head;
   public void insert(String s) {
-    // TODO: use iterator to solve this
+    // TODO: use iterator to solve
+    Node temp=new Node(s);
+    if(head==null){
+      head=temp;
+    }else{
+      Node last = head;
+      while(last.next!=null){
+        last=last.next;
+      }
+      last.next=temp;
+    }
   }
 
   /**
