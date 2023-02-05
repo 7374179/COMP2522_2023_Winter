@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class TreeCollection implements Iterable {
 
-  Node node;
+  Node root;
   TCIterator tcI = new TCIterator(null);
 
 
@@ -38,3 +38,4 @@ public class TreeCollection implements Iterable {
   public Iterator iterator() {
     return new TCIterator(root);
   }
+}

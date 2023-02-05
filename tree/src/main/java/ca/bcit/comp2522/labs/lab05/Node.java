@@ -1,12 +1,10 @@
 package ca.bcit.comp2522.labs.lab05;
 
 public class Node {
-//    public Node root;
-Node left;
+  //    public Node root;
+  Node left;
   Node right;
   int value;
-
-  /* 생성자 */
 
   public Node() {
   }
@@ -15,11 +13,11 @@ Node left;
     this.value = s;
   }
 
-  public Node(String data, Node left, Node right) {
-    this.data = data;
-    this.left = left;
-    this.right = right;
-  }
+//  public Node(String data, Node left, Node right) {
+//    this.data = data;
+//    this.left = left;
+//    this.right = right;
+//  }
 
 
 }

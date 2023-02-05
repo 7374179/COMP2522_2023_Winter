@@ -1,7 +1,9 @@
 package ca.bcit.comp2522.labs.lab05;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+import java.util.Stack;
 
 public class TCIterator implements Iterator {
 //  Node root;
@@ -58,4 +60,4 @@ public class TCIterator implements Iterator {
 //    node.right = right;
 //  }
 
-}
+

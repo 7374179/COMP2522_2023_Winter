@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ca.bcit.comp2522.labs.lab05.TreeCollectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-02T08:18:28" hostname="DESKTOP-83Q2JGJ" time="0.021">
+<testsuite name="ca.bcit.comp2522.labs.lab05.TreeCollectionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-05T23:28:42" hostname="DESKTOP-83Q2JGJ" time="0.032">
   <properties/>
-  <testcase name="TestExample()" classname="ca.bcit.comp2522.labs.lab05.TreeCollectionTest" time="0.021"/>
+  <testcase name="rootNullTest()" classname="ca.bcit.comp2522.labs.lab05.TreeCollectionTest" time="0.024"/>
+  <testcase name="rootTest()" classname="ca.bcit.comp2522.labs.lab05.TreeCollectionTest" time="0.002"/>
+  <testcase name="rightValueTest()" classname="ca.bcit.comp2522.labs.lab05.TreeCollectionTest" time="0.0"/>
+  <testcase name="rootValueTest()" classname="ca.bcit.comp2522.labs.lab05.TreeCollectionTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
