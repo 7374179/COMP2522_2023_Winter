@@ -12,12 +12,12 @@ class TreeCollectionTest {
   @Test
   void TestExample() {
     TreeCollection tc = new TreeCollection();
-    tc.insert(node, "F");
-    tc.insert(node,"E");
-    tc.insert(node,"A");
-    tc.insert(node,"D");
-    tc.insert(node,"G");
-    tc.insert(node,"H");
+    tc.insert(5);
+    tc.insert(4);
+    tc.insert(6);
+    tc.insert(2);
+    tc.insert(3);
+    tc.insert(1);
 //    node = tc.insert(node, "F");
 //    node =tc.insert(node,"E");
 //    node =tc.insert(node,"A");
@@ -25,7 +25,7 @@ class TreeCollectionTest {
 //    node =tc.insert(node,"G");
 //    node =tc.insert(node,"H");
     Iterator it = tc.iterator();
-    String[] order = {"F", "E", "A", "D", "G", "H"};
+    String[] order = {5, 4, 2, 1, 3, 6};
     int i = 0;
     Node current;
 //    Node current=node;

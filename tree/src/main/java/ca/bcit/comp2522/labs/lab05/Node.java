@@ -2,17 +2,17 @@ package ca.bcit.comp2522.labs.lab05;
 
 public class Node {
 //    public Node root;
-  public String data;
-  public Node left;
-  public Node right;
+Node left;
+  Node right;
+  int value;
 
   /* 생성자 */
 
   public Node() {
   }
 
-  public Node(String data) {
-    this.data = data;
+  public Node(int s) {
+    this.value = s;
   }
 
   public Node(String data, Node left, Node right) {

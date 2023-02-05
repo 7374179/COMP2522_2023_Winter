@@ -6,121 +6,56 @@ import java.util.NoSuchElementException;
 public class TCIterator implements Iterator {
 //  Node root;
 
-  Node current;
+  Node root;
+  ArrayList<Node> order;
+  int index = 0;
 
   public TCIterator() {
   }
 
-  public TCIterator(Node n) {
-    this.current = n;
+  public TCIterator(Node root) {
+    this.root = root;
+    this.order = DFSOrder();
   }
 
-  public boolean hasNext() {
-    if (current == null) {
-      return false;
+  public ArrayList<Node> DFSOrder() {
+    ArrayList<Node> order = new ArrayList<Node>();
+
+    if (root == null) return order;
+
+    Stack<Node> stack = new Stack<Node>();
+    stack.push(root);
+    while (!stack.isEmpty()) {
+      Node curr = stack.pop();
+      order.add(curr);
+      if (curr.right != null) stack.push(curr.right);
+      if (curr.left != null) stack.push(curr.left);
     }
-    return true;
+    return order;
   }
 
   @Override
-//  public Node next() {
-////    if (!hasNext()) {
-////      throw new NoSuchElementException();
-////    }
-//    while (current != null) {
-//      current = current.left;
-//    }
-//    Node temp = current;
-//    current = current.right;
-//    return temp;
-//  }
-  public Node next() {
-    if (!hasNext()) {
-      throw new NoSuchElementException();
-    }
-    while (current != null) {
-      if (current.left == null) {
-        break;
-      }
-      current = current.left;
-    }
-//    Node temp = current;
-//    current = current.right;
-    return current;
+  public boolean hasNext() {
+    return index < order.size();
   }
 
-//  public Node next() {
-//    if (!hasNext()) {
-//      throw new NoSuchElementException();
-//    }
-//    while (current != null) {
-//      if (current.left == null) {
-//        break;
-//      }
-//      current = current.left;
-//    }
-//    Node temp = current;
-//    current = current.right;
-//    return temp;
-//  }
-
-
-  void setNode(Node node, String data, Node left, Node right) {
-    Node newNode = new Node(data);
-    node = newNode;
-    node.left = left;
-    node.right = right;
-
+  @Override
+  public Object next() {
+//            if (!hasNext()) {
+//                throw NoSuchElementException();
+//            }
+    Node temp = order.get(index);
+    index++;
+    return temp.value;
   }
+}
 
 
-//  void MorrisTraversal(Node root) {
-//    Node current, pre;
-//
-//    if (root == null)
-//      return;
-//
-//    current = root;
-//    while (current != null)
-//    {
-//      if (current.left == null)
-//      {
-//        System.out.print(current.data + " ");
-//        current = current.right;
-//      }
-//      else {
-//                /* Find the inorder
-//                    predecessor of current
-//                 */
-//        pre = current.left;
-//        while (pre.right != null
-//            && pre.right != current)
-//          pre = pre.right;
-//
-//                /* Make current as right
-//                   child of its
-//                 * inorder predecessor */
-//        if (pre.right == null) {
-//          pre.right = current;
-//          current = current.left;
-//        }
-//
-//                /* Revert the changes made
-//                   in the 'if' part
-//                   to restore the original
-//                   tree i.e., fix
-//                   the right child of predecessor*/
-//        else
-//        {
-//          pre.right = null;
-//          System.out.print(current.data + " ");
-//          current = current.right;
-//        } /* End of if condition pre->right == NULL
-//         */
-//
-//      } /* End of if condition current->left == NULL*/
-//
-//    } /* End of while */
+//  void setNode(Node node, String data, Node left, Node right) {
+//    Node newNode = new Node(data);
+//    node = newNode;
+//    node.left = left;
+//    node.right = right;
 //  }
 
 }
