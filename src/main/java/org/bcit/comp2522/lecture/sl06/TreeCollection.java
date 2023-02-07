@@ -14,10 +14,12 @@ public class TreeCollection implements Iterable {
     Node left;
     Node right;
     int value;
+
     public Node(int s) {
       this.value = s;
     }
   }
+
   public class TCIterator implements Iterator {
     Node root;
     ArrayList<Node> order;
@@ -55,6 +57,9 @@ public class TreeCollection implements Iterable {
 
     @Override
     public Object next() {
+      if (!hasNext()) {
+        throw new NoSuchElementException();
+      }
       Node temp = order.get(index);
       index++;
       return temp.value;
