@@ -1,5 +1,9 @@
 package org.bcit.comp2522.winter2023.midterm.questions;
 
+import org.bcit.comp2522.winter2023.midterm.answers.*;
+
+import java.util.ArrayList;
+
 public class Intermediate_05_ClockManager {
   // Intermediate Question 05 (10 points, 2 TODOs)
   // Idea: tests your ability to create systems of classes.
@@ -29,8 +33,8 @@ public class Intermediate_05_ClockManager {
 
   ArrayList<Intermediate_05_Clock> clocks;
   ArrayList<Intermediate_05_Timer> timers;
-  ArrayList<Intermediate_05_Tickables> tickables;
-  ArrayList<Intermediate_05_Alarmables> alarmables;
+  ArrayList<Intermediate_05_Tickable> tickables;
+  ArrayList<Intermediate_05_Alarmable> alarmables;
 
   public static void main(String[] args) {
     Intermediate_05_Clock alarmClock = new Intermediate_05_AlarmClock();

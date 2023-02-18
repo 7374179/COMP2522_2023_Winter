@@ -5,35 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf8da546-83ca-4a9b-9d36-01df8fd61fdc" name="Changes" comment="First commit!">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Advanced_01_Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Advanced_02_Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Advanced_02_Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Advanced_06_Comparable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Basic_08_UIElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_ContentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_Feedable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_RSSFeed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_RSSFeed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_04_Hierarchies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_AlarmClock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_AlarmTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Alarmable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Clock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_StopWatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Tickable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Timer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_WallClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_06_Comparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_06_Comparable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Alarmable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Alarmable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Clock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Clock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Tickable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Tickable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Timer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_05_ClockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_05_ClockManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676312352388</updated>
-      <workItem from="1676676676738" duration="6272000" />
+      <workItem from="1676676676738" duration="6639000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!">
       <created>1676498806408</created>
