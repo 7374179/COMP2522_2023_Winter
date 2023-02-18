@@ -5,22 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf8da546-83ca-4a9b-9d36-01df8fd61fdc" name="Changes" comment="First commit!">
-      <change afterPath="$PROJECT_DIR$/img/class.diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/communication.diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/sequence.diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/single.diagram.drawio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Advanced_01_Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Advanced_02_Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Advanced_02_Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Advanced_06_Comparable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Basic_08_UIElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_ContentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_Feedable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_RSSFeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_01_ClassDiagram_User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_RSSFeed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_02_User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_04_Hierarchies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_AlarmClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_AlarmTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Alarmable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Clock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_StopWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Tickable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_Timer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/answers/Intermediate_05_WallClock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_01_SingletonManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_01_SingletonManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_02_Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_02_Iterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_03_CompositeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_03_CompositeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_04_TestDrivenDevelopment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_04_TestDrivenDevelopment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_05_IterableManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_05_IterableManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_06_Comparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Advanced_06_Comparable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Basic_08_UIElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Basic_08_UIElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_01_ClockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_05_ClockManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_02_SequenceDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_02_SequenceDiagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_03_CommunicationDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_03_CommunicationDiagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_05_ClassDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bcit/comp2522/winter2023/midterm/questions/Intermediate_01_ClassDiagram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -57,15 +71,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/73741/Documents/comp2522/datily_assignment/ll-04-7374179",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\paul_bucci\IdeaProjects\Midterm-Winter-2023\img" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.bcit.comp2522.winter2023.midterm.answers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Advanced_06_Comparable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.bcit.comp2522.winter2023.midterm.answers.Advanced_06_Comparable" />
+      <module name="Midterm-Winter-2023.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bcit.comp2522.winter2023.midterm.answers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Advanced_06_Comparable" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,6 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676312352388</updated>
+      <workItem from="1676676676738" duration="6272000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!">
       <created>1676498806408</created>
@@ -92,6 +140,9 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -1,6 +1,6 @@
 package org.bcit.comp2522.winter2023.midterm.questions;
 
-public class Advanced_06_Comparable {
+public class Advanced_06_Comparable implements Comparable {
   // Advanced Question 06 (20 points, 2 TODOs)
   // Idea: tests your ability to follow interface requirements.
 
@@ -18,6 +18,11 @@ public class Advanced_06_Comparable {
     this.x = x;
     this.y = y;
     this.z = z;
+  }
+
+  @Override
+  public int compareTo(Object o) {
+    return 0;
   }
 
   // TODO 1: Implement an equals method that checks each the class
