@@ -5,11 +5,24 @@ public class Stack<T> {
 
   public void push(T val) {
     // TODO
+    Node<T> temp = new Node<T>(val);
+    if(head==null){
+      head=temp;
+    }else{
+      temp.next = head;
+      head=temp;
+    }
   }
 
   public T pop() {
+    Node<T> temp=head;
+    if(head.next==null){
+      head = null;
+      return temp.value;
+    }
+    head=head.next;
+    return temp.value;
     // TODO
-    return null;
   }
 
   public void print() {

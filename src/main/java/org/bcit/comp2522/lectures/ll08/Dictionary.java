@@ -3,14 +3,19 @@ package org.bcit.comp2522.lectures.ll08;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dictionary<T> {
+public  class Dictionary<T> {
   private List<KVPair<T>> kvPairs;
 
   public Dictionary() {
     this.kvPairs = new ArrayList<KVPair<T>>();
   }
 
-  public void add(String key, T value) {
+  public void add(String key, T value) throws DuplicateKeyException {
+    for(KVPair<T> kvPair : kvPairs){
+      if(kvPair.key.equals(key)){
+        throw new DuplicateKeyException();
+      }
+    }
     KVPair<T> kvPair = new KVPair<T>(key, value);
     kvPairs.add(kvPair);
   }
@@ -45,7 +50,7 @@ public class Dictionary<T> {
     System.out.format("%s\n",this.toString());
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws DuplicateKeyException {
     Dictionary<String> dictionary = new Dictionary<String>();
     dictionary.add("Hello", "World");
     dictionary.print();

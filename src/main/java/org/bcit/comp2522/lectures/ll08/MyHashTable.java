@@ -8,20 +8,50 @@ public class MyHashTable<K, V> {
 
   int hash(Object o) {
     // TODO
-    return 1;
+    int hash = o.hashCode();
+    int mask = table.length - 1;
+    //length = 9; 8-1=7 -> ..00000000111
+    //   100101010101010010  <-
+    // & 000000000000000111
+    // = 000000000000000010
+    return hash & mask;
   }
 
   V get(K key) {
     // TODO
-    return null;
+    int index = hash(key);
+//    int missCount = 1;
+    while(table[index].key!=key){
+//      System.out.format("Miss %d!\t", missCount);
+//      missCount++;
+      index++;
+    }
+    return table[index].value;
   }
 
   void add(K key, V value) {
     // TODO
+    int index = hash(key);
+    while(table[index]!=null){
+      index++;
+    }
+    table[index]=new MyKVPair<K, V>(key, value);
   }
 
   void add2(K key, V value) {
     // TODO
+    int index = hash(key);
+    while (table[index] != null) {
+      index++;
+      if (index > table.length - 1) {
+        MyKVPair<K, V>[] temp = new MyKVPair[table.length * 2];
+        for (int i = 0; i < table.length; i++){
+          temp[i] = table[i];
+        }
+        table = temp;
+      }
+    }
+    table[index] = new MyKVPair<K, V>(key, value);
   }
 
   @Override
