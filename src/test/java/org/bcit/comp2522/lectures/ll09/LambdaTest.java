@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LambdaTest {
-  Lambda lambda;
-
+  Lambda lambda = new Lambda();
   @Test
   void add2() {
     int res = lambda.add(1, 2);
