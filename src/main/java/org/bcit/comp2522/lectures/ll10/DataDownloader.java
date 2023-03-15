@@ -8,11 +8,34 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Random;
 
+
+
+
 public class DataDownloader implements EventListener {
+  volatile boolean lock = false;
+
+  public class MyThread extends Thread {
+    @Override
+    public void run() {
+      if (!lock) {
+        lock = true;
+        callback(fetch());
+        lock = false;
+      }
+    }
+  }
 
   @Override
   public void onTrigger() {
-     callback(fetch());
+//    new Thread( () -> callback(fetch())).start();
+    Thread thread = new Thread(() -> callback(fetch()));
+    thread.start();
+    try {
+      thread.join();
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
+    }
+//     callback(fetch());
   }
 
   public JSONObject fetch() {
@@ -34,6 +57,7 @@ public class DataDownloader implements EventListener {
   /**
    * Callback for our main processing function.
    * Finds a random image URL and saves it to file.
+   *
    * @param json
    */
   public void callback(JSONObject json) {
@@ -53,6 +77,7 @@ public class DataDownloader implements EventListener {
 
   /**
    * Fetch and save image from URL.
+   *
    * @param imageUrl
    * @param destinationFile
    * @throws IOException
@@ -60,6 +85,7 @@ public class DataDownloader implements EventListener {
   public static void saveImage(String imageUrl, String destinationFile) throws IOException {
     URL url = new URL(imageUrl);
     InputStream is = url.openStream();
+    OutputStream os = new FileOutputStream(destinationFile);
 
     byte[] b = new byte[2048];
     int length;
