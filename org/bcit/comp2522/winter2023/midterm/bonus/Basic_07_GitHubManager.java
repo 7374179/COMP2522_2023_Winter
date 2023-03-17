@@ -76,3 +76,14 @@ public class Basic_07_GitHubManager {
     }
   }
 }
+
+// Correct order:
+
+// local.add(file)
+//    f.getEdited()
+//    changed.add(f)
+// local.push()
+//  forEach:
+//    remote.push(f)
+//      files.add(f)
+//    f.setEdited(false);
