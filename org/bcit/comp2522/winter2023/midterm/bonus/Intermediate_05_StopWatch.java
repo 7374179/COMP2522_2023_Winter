@@ -27,4 +27,9 @@ public class Intermediate_05_StopWatch extends Intermediate_05_Timer{
     public void stop() {
         // stop the timer
     }
+
+    @Override
+    public void tick() {
+
+    }
 }

@@ -38,18 +38,3 @@ class Basic_06_DoorTest_answer {
         assertFalse(door.open);
     }
 }
-
-
-//    public void unlock() {
-//        this.locked = false;
-//    }
-//
-//    public void lock() throws Basic_05_OpenException {
-//        // TODO 3: Create a new exception called Basic_05_OpenException
-//        // and throw it if this is called while open == true
-//        // otherwise, set lock = true
-//        if (open) {
-//            throw new Basic_05_OpenException("It is opened.");
-//        }
-//        locked = true;
-//    }

@@ -15,7 +15,8 @@ public class Advanced_02_Node {
     this.value = value;
   }
 
-
-
-
+  public Advanced_02_Node(String label, int value) {
+    this.label = label;
+    this.value = value;
+  }
 }

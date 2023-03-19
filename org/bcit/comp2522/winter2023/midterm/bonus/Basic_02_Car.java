@@ -39,7 +39,7 @@ public class Basic_02_Car {
     for (int i = 0; i < 99; i++) {
       car.run();
       System.out.println("gas: " + car.gasTank.gas);          //내가 추가
-      System.out.println("spped: " + car.speedometer.speed);  //내가 추가
+      System.out.println("speed: " + car.speedometer.speed);  //내가 추가
     }
     // car.speedometer.speed should be == 99;
     // car.gasTank.gas should be == 1;

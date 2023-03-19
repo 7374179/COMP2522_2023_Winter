@@ -77,7 +77,7 @@ public class Basic_07_GitHubManager {
   }
 }
 
-// Correct order:
+// order:
 
 // local.add(file)
 //    f.getEdited()

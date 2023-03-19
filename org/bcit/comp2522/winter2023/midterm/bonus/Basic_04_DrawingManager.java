@@ -2,7 +2,7 @@ package org.bcit.comp2522.winter2023.midterm.bonus;
 
 import java.util.ArrayList;
 
-public class Basic_04_DrawingManager {
+public class Basic_04_DrawingManager implements Basic_04_Graphic {
   // Basic Question 04 (5 points, 3 TODOs)
   // Idea: tests your ability to create and use interfaces
 
@@ -21,16 +21,28 @@ public class Basic_04_DrawingManager {
   // TODO 2: Make the classes necessary to make the methods below work.
   // All concrete classes, including this one, should implement your interface.
 
+      static class Basic_04_RasterGraphic implements Basic_04_Graphic {
+        public void draw() {
+            System.out.println("Drawing raster graphic");
+        }
+    }
+
+    static class Basic_04_VectorGraphic implements Basic_04_Graphic {
+        public void draw() {
+            System.out.println("Drawing vector graphic");
+        }
+    }
+
   ArrayList<Basic_04_Graphic> graphics;
 
   public Basic_04_DrawingManager() {
     this.graphics = new ArrayList<Basic_04_Graphic>();
   }
 
-  public void add(Basic_04_RasterGraphic raster) {
+  public void add(Basic_04_VectorGraphic raster) {
     graphics.add(raster);
   }
-  public void add(Basic_04_VectorGraphic vector) {
+  public void add(Basic_04_RasterGraphic vector) {
     graphics.add(vector);
   }
 

@@ -26,18 +26,14 @@ public class Advanced_03_CompositeManager {
     // Pattern works. Create at a Document that has at least two levels
     // of nesting within it.
 
-    /**
-     * 컴포지트 패턴은 전체-부분의 관계를 갖는 객체들 사이의 관계를 정의할 때 유용하다.
-     * 그리고 클라이언트는 전체와 부분을 구분하지 않고 동일한 인터페이스를 사용할 수 있다.
-     */
     public static void main(String[] args) {
-        File file01 = new File("기밀문서.txt", 100);
-        File file02 = new File("임시파일.txt", 30);
-        File file03 = new File("새파일.txt", 0);
+        File file01 = new File("secFile.txt", 100);
+        File file02 = new File("temporaryFile.txt", 30);
+        File file03 = new File("newFile.txt", 0);
         File file04 = new File("test.txt", 70);
 
-        Folder folder01 = new Folder("직박구리");
-        Folder folder02 = new Folder("새폴더");
+        Folder folder01 = new Folder("javaFolder");
+        Folder folder02 = new Folder("newFoler");
 
         folder01.addComponent(file01);
         folder01.addComponent(file02);

@@ -2,6 +2,14 @@ package org.bcit.comp2522.winter2023.midterm.bonus;
 
 import java.util.Iterator;
 
+// 1. The hasNext() method in TODO 2 returns a comparison of n with current.n,
+//  but I did not define n in the class and current is not initialized.
+//  This will cause a compilation error.
+// 2. The next() method in TODO 2 returns a String, but the elements
+//  in the Advanced_02_Node class are defined as a String and an int.
+//  My method should return an element of the same type as the elements
+//  in the Advanced_02_Node class.
+
 public class Advanced_02_Iterator implements Iterator<Advanced_02_Node> {
   // Advanced Question 02 (20 points, 4 TODOs)
   // Idea: tests your ability to create and use iterators.

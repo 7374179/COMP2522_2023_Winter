@@ -9,4 +9,5 @@ public class Advanced_05_GridItem {
 
     public String getValue() {
         return value;
-    }}
+    }
+}
