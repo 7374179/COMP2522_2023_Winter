@@ -2,18 +2,14 @@ package org.bcit.comp2522.winter2023.midterm.bonus;
 
 public class Intermediate_04_MySolution {
     public class Intermediate_04_AnimalHierarchy {
-        // Intermediate Question 04 (10 points, 2 TODOs)
-        // Idea: tests your ability to model real-world phenomena using classes.
-
-        // TODO 1: Create a system of classes in code that models the relationships between
+        // a system of classes in code that models the relationships between
         // different types of Animals, specifically:
         // - Lion, Tiger, Leopard
         // - Dolphin, KillerWhale
         // - Parrot, Penguin
         //
-        // Create superclasses to model these relations (at least 4).
-        // Also create interfaces to model abilities (at least 3).
-        // Marks given for clarity, readability, and correctness.
+        // created superclasses to model these relations (at least 4).
+        // Also created interfaces to model abilities (at least 3).
 
         //Interface for Swimmers
         public interface Swimmer {

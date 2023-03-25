@@ -5,6 +5,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class Advanced_03_MySolution {
+//    This code implements the Composite pattern to represent a hierarchical structure of employees,
+//    where a Manager can have subordinates who can also be Managers or Workers.
+//    The Employee class is an abstract class that defines common methods for both Managers and Workers,
+//    such as add(), remove(), getSubordinates(), and getTotalSalary().
+//    The Manager class extends the Employee class and maintains a list of subordinates,
+//    while the Worker class is a leaf node that cannot have subordinates.
+
     public abstract class Employee {
         private String name;
         private int salary;

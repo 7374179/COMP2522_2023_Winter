@@ -5,25 +5,8 @@ import java.util.List;
 
 public class Intermediate_05_MySolution {
 
-    // All classes should be prefixed with Intermediate_05_MySolution_.
-    // 1. There should be a class called MenuItem that contains information
-    //  about a menu item, such as name, price, and description.
-    // 2. There should be a class called OrderItem that contains information
-    //  about an item ordered by a customer, including the menu item
-    //  and the quantity ordered.
-    // 3. There should be a class called Order that contains information
-    //  about an entire order, including the customer who placed the order,
-    //  the list of order items, and the total price.
-    // 4. There should be a class called Customer that contains information
-    //  about a customer, such as their name and contact information.
-    // 5. There should be an interface called Orderable that defines methods
-    //   for placing and viewing orders.
-    // 6. There should be a class called CustomerOrderingSystem
-    //   that implements the Orderable interface and allows customers
-    //   to place orders and view their order history.
-    // 7. There should be a class called StaffOrderingSystem
-    //  that allows restaurant staff to view and manage orders,
-    //  including marking orders as complete and viewing the list of orders.
+
+
 
     // 1. MenuItem class
     class Intermediate_05_MySolution_MenuItem {
@@ -32,6 +15,7 @@ public class Intermediate_05_MySolution {
         private String description;
 
         public Intermediate_05_MySolution_MenuItem(String name, double price, String description) {
+            // 1. a class called MenuItem that contains information about a menu item, such as name, price, and description.
             this.name = name;
             this.price = price;
             this.description = description;
@@ -52,6 +36,8 @@ public class Intermediate_05_MySolution {
 
     // 2. OrderItem class
     class Intermediate_05_MySolution_OrderItem {
+        // 2. a class called OrderItem that contains information about an item ordered by a customer, including the menu item
+        //  and the quantity ordered.
         private Intermediate_05_MySolution_MenuItem menuItem;
         private int quantity;
 
@@ -71,6 +57,8 @@ public class Intermediate_05_MySolution {
 
     // 3. Order class
     class Intermediate_05_MySolution_Order {
+        // 3. a class called Order that contains information about an entire order, including the customer who placed the order,
+        //  the list of order items, and the total price.
         private Intermediate_05_MySolution_Customer customer;
         private List<Intermediate_05_MySolution_OrderItem> orderItems;
         private double totalPrice;
@@ -110,6 +98,8 @@ public class Intermediate_05_MySolution {
 
     // 4. Customer class
     class Intermediate_05_MySolution_Customer {
+        // 4. a class called Customer that contains information about a customer, such as their name and contact information.
+
         private String name;
         private String contactInfo;
 
@@ -129,6 +119,7 @@ public class Intermediate_05_MySolution {
 
     // 5. Orderable interface
     interface Intermediate_05_MySolution_Orderable {
+        // 5. an interface called Orderable that defines methods for placing and viewing orders.
         void placeOrder(Intermediate_05_MySolution_Order order);
 
         List<Intermediate_05_MySolution_Order> getOrderHistory(Intermediate_05_MySolution_Customer customer);
@@ -136,6 +127,8 @@ public class Intermediate_05_MySolution {
 
     // 6. CustomerOrderingSystem class
     class Intermediate_05_MySolution_CustomerOrderingSystem implements Intermediate_05_MySolution_Orderable {
+        // 6. a class called CustomerOrderingSystem that implements the Orderable interface and allows customers
+        //   to place orders and view their order history.
         private List<Intermediate_05_MySolution_Order> orders;
 
         public Intermediate_05_MySolution_CustomerOrderingSystem() {
@@ -159,6 +152,9 @@ public class Intermediate_05_MySolution {
 
     // 7. StaffOrderingSystem class
     class Intermediate_05_MySolution_StaffOrderingSystem {
+        // 7. a class called StaffOrderingSystem that allows restaurant staff to view and manage orders,
+        //  including marking orders as complete and viewing the list of orders.
+
         private List<Intermediate_05_MySolution_Order> orders;
 
         public Intermediate_05_MySolution_StaffOrderingSystem(List<Intermediate_05_MySolution_Order> orders) {

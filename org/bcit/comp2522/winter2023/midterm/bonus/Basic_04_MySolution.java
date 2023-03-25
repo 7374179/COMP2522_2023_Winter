@@ -30,10 +30,6 @@ public class Basic_04_MySolution {
         this.graphics = new ArrayList<>();
     }
 
-//    public void Basic_04_DrawingManager() {
-//        this.graphics = new ArrayList<Basic_04_Graphic>();
-//    }
-
     public void draw() {
         for (Basic_04_Graphic graphic : graphics) {
             graphic.draw();

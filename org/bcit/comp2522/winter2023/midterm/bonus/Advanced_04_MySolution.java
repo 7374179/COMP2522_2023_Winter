@@ -1,14 +1,9 @@
 package org.bcit.comp2522.winter2023.midterm.bonus;
 
 public class Advanced_04_MySolution {
-    // TODO 1: The Calculator class has methods for adding, subtracting, multiplying,
-    //  and dividing two numbers.
-    // Create the test cases for this class. The high-level things that I want
-    // it to accomplish are the following:
-    // - Adding two numbers returns the correct sum
-    // - Subtracting two numbers returns the correct difference
-    // - Multiplying two numbers returns the correct product
-    // - Dividing two numbers returns the correct quotient
+//  The provided code includes commented out test methods for the Calculator class
+//  with no actual implementation. In order to complete this task, I must write
+//  the implementation for the Calculator class and ensure that it passes all the provided tests.
 
 //
 //    private Calculator calculator;

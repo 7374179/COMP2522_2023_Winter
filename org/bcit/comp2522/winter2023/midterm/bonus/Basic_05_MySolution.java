@@ -16,9 +16,6 @@ public class Basic_05_MySolution {
 //    and various deposit and withdrawal operations are performed on it,
 //    with appropriate exception handling code.
     public class Basic_05_Account {
-        // Basic Question 05 (5 points, 4 TODOs)
-        // Idea: tests your ability to create and use meaningful exceptions.
-
         private String accountNumber;
         private double balance;
 

@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Advanced_01_MySolution {
+//    This JUnit test class tests a Singleton class named "Advanced_01_Server"
+//    and contains three methods to check that only one instance can be created,
+//    the UID is not zero, and the connected state can be set and checked.checked
 
     @Test
     public void testSingleton() {

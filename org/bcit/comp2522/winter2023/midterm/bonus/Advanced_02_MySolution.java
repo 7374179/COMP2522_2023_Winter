@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Advanced_02_MySolution {
+//    This Java program named "Advanced_02_MySolution" creates a linked list of "Advanced_02_Node" objects
+//    and uses two iterators, "forwardIterator" and "backwardIterator",
+//    to traverse the list in forward and backward directions.
+//    It then prints out the labels and values of each node in the list for both forward and backward traversals.
     public static void main(String[] args) {
         // Create a linked list of Advanced_02_Node objects
         Advanced_02_Node node1 = new Advanced_02_Node("Node 1", 1);

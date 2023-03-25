@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class Advanced_05_MySolution {
-    // In the above code, the Grid class implements the Iterable<GridItem> interface
+    // The Grid class implements the Iterable<GridItem> interface
     // and overrides the iterator() method. The iterator() method returns
     // an instance of the GridIterator class, which overrides the hasNext()
     // and next() methods to sequentially iterate through each element
