@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Midterm-Winter-2023
 
 Welcome to the COMP 2522 midterm!
@@ -32,8 +31,3 @@ And ONLY the GitHub page for the midterm. CONTRARY TO LAST TERM'S MIDTERM, YOU A
 Now, you may ask, how will he know? The answer is that I will gauge by running a number of NLP checks against your code. If there is similar code between students, I will flag it for a deeper plagairism check. What this means is that you should very probably not be using anything covert to generate code. Now, I'll be reasonable about it, e.g., the automatic getters and setters won't be something that I expect to be different between people, but there are extremely obvious indicators of similar code that I have been able to detect so far when reading it myself. So, the process will be: (1) I run all files against each other for similarities and flag anything that has a similarity score above a threshold that I set; (2) I read each instance of similarity; and (3) if I determine that you used the same source, I will start a plagairism investigation process.
 
 This is more for the students who are not going to attempt to cheat: trust me, it's exceedingly obvious when people have been copying off of the same source code. The reason why I have the RE-TYPE WITHOUT LOOKING clause is because that makes my job easy. Nobody is capable of retyping perfectly from the same source by even short-term memory if they're not looking at it. So, even if you studied together and have similar references, you will not have similar code if you re-type. It's actually harder to make copy-pasted code look like non-similar code than people realize.
-=======
-# LL-06
-
-No tests to make pass today. Try running everything!
->>>>>>> ll-06-7374179/master
