@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+group 'org.bcit.comp2522.winter2023.midterm'
+=======
+group 'org.bcit.comp2522.lectures.ll06'
+>>>>>>> ll-06-7374179/master
+=======
+group 'org.bcit.comp2522.lecture.sl06'
+>>>>>>> sl-06-7374179/master
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> ll-06-7374179/master
+=======
+>>>>>>> sl-06-7374179/master
+}
+
+test {
+    useJUnitPlatform()
+}
