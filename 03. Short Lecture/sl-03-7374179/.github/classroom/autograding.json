@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+<<<<<<< HEAD
+      "name": "TimerTest",
+=======
+      "name": "LetterTest.java",
+>>>>>>> sl-03-7374179/master
+      "setup": "",
+      "run": "gradle test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
