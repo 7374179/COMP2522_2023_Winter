@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+<<<<<<< HEAD
+group 'org.bcit.comp2522.lectures.sl12'
+=======
+group 'org.bcit.comp2522.lectures.ll10'
+>>>>>>> ll-10-7374179/master
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+<<<<<<< HEAD
+=======
+    implementation 'org.json:json:20230227'
+    implementation fileTree(dir: 'library', include: ['*.jar'])
+>>>>>>> ll-10-7374179/master
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
