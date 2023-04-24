@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+<<<<<<< HEAD
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+=======
+        <option name="externalProjectPath" value="$PROJECT_DIR$/org/bcit/comp2522/winter2023/midterm/org.bcit.midterm.mysolution" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/org/bcit/comp2522/winter2023/midterm/org.bcit.midterm.mysolution" />
+>>>>>>> midterm-bonus-and-takeup-7374179/main
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
